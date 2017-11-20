@@ -47,12 +47,11 @@
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     <main>
       
-      <!--
+      
       <div class="page-loader">
         <div class="loader">Loading...</div>
       </div>
-      -->
-      
+            
       <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
@@ -109,7 +108,21 @@
         -->
         <div class="titan-caption">
           <div class="caption-content">
-            <div class="font-alt mb-40 titan-title-size-4">
+            <div class="contentLogo">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" alt=""/>
+              </a>
+            </div>
+            <div class="contentNav hidden-xs hidden-sm">
+              <ul class="nav navbar-nav">
+                <li><a class="section-scroll" href="#home">Home</a></li>
+                <li><a class="section-scroll" href="#somos">Quienes Somos</a></li>
+                <li><a class="section-scroll" href="#proyecto">Proyecto</a></li>
+                <li><a class="section-scroll" href="#contacto">Contacto</a></li>  
+              </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="font-alt mb-40 title titan-title-size-3">
               <span>VIVE TU SUEÑO</span>
             </div>
             <a class="section-scroll btn btn-d btn-round" href="#somos">Conócenos</a>
@@ -259,28 +272,38 @@
           </div>
         </section>
 
-        <div class="footer module-small bg-dark bg-verde">
+        <div class="footer bg-verde">
           <div class="container">
             <div class="row">
-              <div class="col-sm-3 col-sm-offset-6">
+              <div class="col-sm-3">
                 <div class="widget">
                   <h5 class="widget-title font-alt">Naturaleza Indomita</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eligendi at facilis a eaque quod accusantium explicabo reiciendis sit distinctio debitis porro accusamus magnam eos fuga, natus, quia dolorum praesentium.</p>
-                  <a href="tel:+56976191612">
-                    <span class="icon-phone"></span>+56 9 76191612</a>
-                  <br>
-                  <a href="mailto:natindomita@gmail.com"><span class="cmsmasters-icon-custom-email"> natindomita@gmail.com</span></a>
                 </div>
               </div>
-              
+              <div class="col-sm-3 col-sm-offset-3">
+                <a href="tel:+56976191612">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    +56 9 76191612
+                </a>
+                <br>
+                <a href="mailto:natindomita@gmail.com">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  natindomita@gmail.com
+                </a>
+                <div class="footer-social-links">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                    /facebook
+                  </a>
+                </div>
+              </div>
               <div class="col-sm-3">
-                <img src="images/logo_inv.svg" width="50%" alt="">
+                <img src="images/logo_negro.svg" width="50%" alt="">
               </div>
             </div>
           </div>
         </div>
-
-        <hr class="divider-d">
 
         <footer class="footer">
           <div class="container">
@@ -288,15 +311,10 @@
               <div class="col-sm-6">
                 <p class="copyright font-alt">&copy; 2017&nbsp;<a href="index_video.html">NATURALEZA INDOMITA</a>, Derechos Reservados</p>
               </div>
-              <div class="col-sm-6">
-                <div class="footer-social-links">
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-skype"></i></a>
-                </div>
-              </div>
             </div>
           </div>
         </footer>
+
       </div>
 
       <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>

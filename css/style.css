@@ -8,7 +8,7 @@ html {
 
 body {
   background: #fff;
-  font: 400 12px/1.8 "Open Sans", sans-serif;
+  font: 400 14px/1.8 "Roboto Condensed", sans-serif;
   color: #666;
   -webkit-font-smoothing: antialiased; }
 
@@ -146,12 +146,25 @@ a,
   background-position: 50% 50%;
   background-size: cover; }
 
-.footer.module-small a {
-  color: #333;
-  font-weight: bold; }
-  .footer.module-small a .span {
-    padding: 0 15px 0 0;
-    display: inline-block; }
+.footer {
+  font-size: 12px;
+  color: #111; }
+  .footer p {
+    font-size: 14px;
+    line-height: 120%;
+    font-family: "Roboto Condensed", sans-serif; }
+  .footer a {
+    font-size: 14px; }
+    .footer a .fa {
+      border: #111 solid 1px;
+      padding: 5px;
+      height: 25px;
+      width: 25px;
+      text-align: center;
+      margin: 0 0 5px; }
+    .footer a .span {
+      padding: 0 15px 0 0;
+      display: inline-block; }
 
 /* Module header */
 .module-small {
@@ -228,9 +241,10 @@ a,
 .bg-dark {
   background: #111; }
 
+.bg-verde,
 .bg-dark.bg-verde {
   background: #a6b84d;
-  padding: 25px 0; }
+  padding: 50px 0; }
 
 .bg-dark-30:before {
   position: absolute;
@@ -502,23 +516,21 @@ a,
   bottom: 7px;
   right: 7px;
   z-index: 999; }
-
-.scroll-up a {
-  background: #fff;
-  display: block;
-  height: 28px;
-  width: 28px;
-  text-align: center;
-  line-height: 28px;
-  font-size: 14px;
-  color: #000;
-  opacity: 0.6;
-  border-radius: 2px; }
-
-.scroll-up a:hover,
-.scroll-up a:active {
-  opacity: 1;
-  color: #000; }
+  .scroll-up a {
+    background: #678878;
+    display: block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 37px;
+    font-size: 18px;
+    color: #FFF;
+    opacity: 1;
+    border-radius: 2px; }
+  .scroll-up a:hover,
+  .scroll-up a:active {
+    opacity: 1;
+    color: #000; }
 
 /* Video */
 .video-controls-box {
@@ -947,6 +959,9 @@ Hero Slider
   -moz-background-size: cover;
   -o-background-size: cover; }
 
+.clear {
+  clear: both; }
+
 /* Caption */
 .titan-caption {
   position: relative;
@@ -954,9 +969,48 @@ Hero Slider
   height: 100%;
   width: 70%;
   margin: 0 auto; }
-  .titan-caption span {
-    background: #111;
-    padding: 20px 0px 20px 20px; }
+  .titan-caption .contentLogo {
+    width: 100%; }
+    .titan-caption .contentLogo a.navbar-brand {
+      background: #FFF;
+      height: auto;
+      letter-spacing: 4px;
+      font-weight: 400;
+      font-size: 22px;
+      color: #fff;
+      padding: 50px;
+      border-radius: 0 0 3px;
+      box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+      display: inline-block;
+      float: none; }
+      .titan-caption .contentLogo a.navbar-brand img {
+        width: 150px; }
+  .titan-caption .contentNav {
+    width: 100%;
+    float: left;
+    margin: 25px 0;
+    text-align: center; }
+    .titan-caption .contentNav .nav.navbar-nav {
+      display: inline-block;
+      float: none; }
+      .titan-caption .contentNav .nav.navbar-nav li a {
+        border: #FFF solid 1px;
+        color: #FFF;
+        margin: 0 2px;
+        position: relative;
+        font-weight: bold;
+        font-size: 12px;
+        font-family: "Roboto Condensed", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 3px; }
+      .titan-caption .contentNav .nav.navbar-nav li a:hover,
+      .titan-caption .contentNav .nav.navbar-nav li a:focus {
+        background: none;
+        color: #ccc; }
+  .titan-caption .title span {
+    display: inline-block;
+    background: #a6b84d;
+    padding: 20px 50px; }
 
 .caption-content {
   display: table-cell;
@@ -1075,6 +1129,7 @@ General Styles - Owlcarousel
   font-size: 11px;
   transition: background, padding 0.4s ease-in-out 0s;
   background: #FFF;
+  height: 100px;
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2); }
@@ -1088,17 +1143,20 @@ General Styles - Owlcarousel
     font-size: 22px;
     color: #fff;
     padding: 15px;
-    border-radius: 0 0 3px; }
+    border-radius: 0 0 3px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2); }
     .navbar a.navbar-brand img {
       width: 100px; }
   .navbar ul.navbar-nav {
-    margin-top: 40px; }
+    margin-top: 25px; }
     .navbar ul.navbar-nav li > a {
       position: relative;
       margin: 0 0 0 5px;
-      color: #FFF;
-      border: #FFF solid 1px;
-      background: #a6b84d; }
+      color: #a6b84d;
+      border: #a6b84d solid 1px;
+      background: #fff;
+      font-weight: bold;
+      font-size: 12px; }
 
 .navbar-custom .dropdown-menu {
   background: rgba(26, 26, 26, 0.9);
@@ -1291,18 +1349,15 @@ General Styles - Owlcarousel
 /*--------------------------------------------------------------
 	Footer
 --------------------------------------------------------------*/
-.footer {
+footer {
   padding: 10px 0; }
-
-.footer .copyright {
-  margin: 0; }
-
-.footer .footer-social-links {
-  text-align: right; }
-
-.footer .footer-social-links a {
-  display: inline-block;
-  padding: 0 6px; }
+  footer .copyright {
+    margin: 0; }
+  footer .footer-social-links {
+    text-align: right; }
+  footer .footer-social-links a {
+    display: inline-block;
+    padding: 0 6px; }
 
 /* -------------------------------------------------------------
 Google map
@@ -2307,13 +2362,10 @@ Google map
 --------------------------------------------------------------*/
 /*rapido*/
 @media (min-width: 768px) {
-  .no-scroll .titan-caption span {
-    display: inline-block;
-    margin: 30% 0 0; }
-
   .navbar-transparent {
     background: none;
-    box-shadow: none; }
+    box-shadow: none;
+    display: none; }
     .navbar-transparent .container .navbar-header {
       width: 100%;
       float: right;
@@ -2337,6 +2389,8 @@ Google map
           float: none;
           display: inline-block; }
           .navbar-transparent .container .navbar-collapse .nav li a {
+            border-color: #FFF;
+            color: #FFF;
             background: none; }
 
   .navbar-custom .dropdown-menu {
@@ -2403,6 +2457,23 @@ Google map
     position: relative;
     height: 300px; } }
 @media (max-width: 767px) {
+  /*celu*/
+  .navbar.navbar-transparent {
+    background: none;
+    box-shadow: none;
+    text-align: center; }
+    .navbar.navbar-transparent a.navbar-brand {
+      display: none;
+      margin: 0 0 0 15px; }
+    .navbar.navbar-transparent .navbar-toggle {
+      border: #FFF solid 1px;
+      border-radius: 1px; }
+      .navbar.navbar-transparent .navbar-toggle .icon-bar {
+        background: #FFF; }
+
+  .navbar-collapse {
+    border: red solid 1px; }
+
   /* Navbar */
   .navbar-custom .navbar-nav {
     letter-spacing: 3px;

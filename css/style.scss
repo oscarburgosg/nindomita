@@ -19,7 +19,7 @@ html {
 
 body {
   background: #fff;
-  font: 400 12px/1.8 "Open Sans", sans-serif;
+  font: 400 14px/1.8 "Roboto Condensed", sans-serif;
   color: #666;
   -webkit-font-smoothing: antialiased;
 }
@@ -179,11 +179,27 @@ a,
   background-size: cover;
 }
 
-.footer.module-small{
+.footer{
+  font-size: 12px;
+  color:#111;
+
+  p{
+    font-size: 14px;
+    line-height: 120%;
+    font-family: "Roboto Condensed", sans-serif;
+  }
 
   a{
-    color:#333;
-    font-weight: bold;
+    font-size: 14px;
+
+    .fa{
+      border: #111 solid 1px;
+      padding: 5px;
+      height: 25px;
+      width: 25px;
+      text-align: center;
+      margin: 0 0 5px;
+    }
 
     .span{
       padding:0 15px 0 0;
@@ -248,6 +264,7 @@ a,
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   padding: 140px 60px;
+  
 }
 
 .contentSomos{
@@ -279,9 +296,10 @@ a,
   background: #111;
 }
 
+.bg-verde,
 .bg-dark.bg-verde{
   background: $verdeclaro;
-  padding: 25px 0;
+  padding: 50px 0;
 }
 
 .bg-dark-30:before {
@@ -600,25 +618,25 @@ a,
   bottom: 7px;
   right: 7px;
   z-index: 999;
-}
 
-.scroll-up a {
-  background: #fff;
-  display: block;
-  height: 28px;
-  width: 28px;
-  text-align: center;
-  line-height: 28px;
-  font-size: 14px;
-  color: #000;
-  opacity: 0.6;
-  border-radius: 2px;
-}
+  a {
+    background: $verdemedio;
+    display: block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 37px;
+    font-size: 18px;
+    color: #FFF;
+    opacity: 1;
+    border-radius: 2px;
+  }
 
-.scroll-up a:hover,
-.scroll-up a:active {
-  opacity: 1;
-  color: #000;
+  a:hover,
+  a:active {
+    opacity: 1;
+    color: #000;
+  }
 }
 
 /* Video */
@@ -1129,6 +1147,10 @@ Hero Slider
   -o-background-size: cover;
 }
 
+.clear{
+  clear: both;
+}
+
 /* Caption */
 .titan-caption {
   position: relative;
@@ -1137,9 +1159,70 @@ Hero Slider
   width: 70%;
   margin: 0 auto;
 
-  span{
-    background: #111;
-    padding:20px 0px 20px 20px;
+  .contentLogo{
+    width:100%;
+
+    a.navbar-brand{
+      background: #FFF;
+      height:auto;
+      letter-spacing: 4px;
+      font-weight: 400;
+      font-size: 22px;
+      color: #fff;
+      padding:50px;
+      border-radius: 0 0 3px;
+      box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+      display: inline-block;
+      float: none;
+
+      img{
+        width:150px;
+      }
+    }
+  }
+
+  .contentNav{
+    width:100%;
+    float: left;
+    margin:25px 0;
+    text-align: center;
+    
+    .nav.navbar-nav{
+      display: inline-block;
+      float: none;
+
+      li{
+        
+        a{
+          border:#FFF solid 1px;
+          color:#FFF;
+          margin:0 2px;
+
+          position: relative;
+          font-weight: bold;
+          font-size: 12px;
+
+          font-family: "Roboto Condensed", sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+        }
+
+        a:hover,
+        a:focus{
+          background: none;
+          color:#ccc;
+        }
+      }
+    }
+  }
+  
+  .title{
+
+    span{
+      display: inline-block;
+      background: $verdeclaro;
+      padding:20px 50px;
+    }
   }
 }
 
@@ -1281,6 +1364,8 @@ General Styles - Owlcarousel
   transition: background, padding 0.4s ease-in-out 0s;
   background: #FFF;
 
+  height:100px;
+
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
@@ -1298,6 +1383,7 @@ General Styles - Owlcarousel
     color: #fff;
     padding:15px;
     border-radius: 0 0 3px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
 
     img{
       width:100px;
@@ -1305,14 +1391,16 @@ General Styles - Owlcarousel
   }
 
   ul.navbar-nav{
-    margin-top:40px;
+    margin-top:25px;
 
     li > a {
       position: relative;
       margin:0 0 0 5px;
-      color:#FFF;
-      border:#FFF solid 1px;
-      background: $verdeclaro
+      color:$verdeclaro;
+      border:$verdeclaro solid 1px;
+      background: #fff;
+      font-weight: bold;
+      font-size: 12px;
     }
   }
 }
@@ -1555,21 +1643,21 @@ General Styles - Owlcarousel
 /*--------------------------------------------------------------
 	Footer
 --------------------------------------------------------------*/
-.footer {
+footer {
   padding: 10px 0;
-}
 
-.footer .copyright {
-  margin: 0;
-}
+  .copyright {
+    margin: 0;
+  }
 
-.footer .footer-social-links {
-  text-align: right;
-}
+  .footer-social-links {
+    text-align: right;
+  }
 
-.footer .footer-social-links a {
-  display: inline-block;
-  padding: 0 6px;
+  .footer-social-links a {
+    display: inline-block;
+    padding: 0 6px;
+  }
 }
 
 /* -------------------------------------------------------------
@@ -2784,15 +2872,12 @@ Google map
 @media (min-width: 768px) {
   .no-scroll{
 
-    .titan-caption span{
-      display:inline-block;
-      margin:30% 0 0;
-    }
   }
 
   .navbar-transparent {
     background: none;
     box-shadow: none;
+    display: none;
     
     .container{
       
@@ -2828,6 +2913,8 @@ Google map
             display: inline-block;
 
             a{
+              border-color:#FFF;
+              color:#FFF;
               background: none;
             }
           }
@@ -2912,6 +2999,35 @@ Google map
 }
 
 @media (max-width: 767px) {
+  /*celu*/
+  body{
+    
+  }
+
+  .navbar.navbar-transparent{
+    background: none;
+    box-shadow: none;
+    text-align: center;
+
+    a.navbar-brand{
+      display: none;
+      margin:0 0 0 15px;
+    }
+
+    .navbar-toggle{
+      border:#FFF solid 1px;
+      border-radius: 1px;
+
+      .icon-bar{
+        background: #FFF;
+      }
+    }
+  }
+
+  .navbar-collapse{
+    border:red solid 1px;
+  }
+
   /* Navbar */
   .navbar-custom .navbar-nav {
     letter-spacing: 3px;

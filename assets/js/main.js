@@ -1,4 +1,4 @@
-console.log('%c Karin para ti.', 'background: #222; color: #bada55');
+console.log('%c     Karin para ti.', 'background: #222; color: #bada55');
 
 /* ---------------------------------------------- /*
  * Preloader
@@ -20,11 +20,13 @@ console.log('%c Karin para ti.', 'background: #222; color: #bada55');
             if (navbar.length > 0 && homeSection.length > 0) {
                 if(topScroll >= navHeight) {
                     navbar.removeClass('navbar-transparent');
-                    $('.test').removeClass('scroll');
+                    $('.contentLogo').addClass('hide');
+                    $('.contentNav').addClass('hide');
                     $('body').removeClass('no-scroll');
                 } else {
                     navbar.addClass('navbar-transparent');
-                    $('.test').addClass('scroll');
+                    $('.contentLogo').removeClass('hide');
+                    $('.contentNav').removeClass('hide');
                     $('body').addClass('no-scroll');
                 }
             }
