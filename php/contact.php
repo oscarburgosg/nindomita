@@ -4,17 +4,17 @@
 
 	// Check if name has been entered
 	if (!isset($_POST['name'])) {
-		$errors['name'] = 'Please enter your name';
+		$errors['name'] = 'Ingresa tu nombre';
 	}
 
 	// Check if email has been entered and is valid
 	if (!isset($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-		$errors['email'] = 'Please enter a valid email address';
+		$errors['email'] = 'Ingresa tu email';
 	}
 
 	//Check if message has been entered
 	if (!isset($_POST['message'])) {
-		$errors['message'] = 'Please enter your message';
+		$errors['message'] = 'Cuentanos tu inquietud';
 	}
 
 	$errorOutput = '';
@@ -43,10 +43,10 @@
 	$email = $_POST['email'];
 	$message = $_POST['message'];
 	$from = $email;
-	$to = 'info@example.com';  // please change this email id
-	$subject = 'Contact Form : Titan - The best downloaded template ever';
+	$to = 'info@naturalezaindomita.cl';  // please change this email id
+	$subject = 'Contacto desde www.naturalezaindomita.cl';
 
-	$body = "From: $name\n E-Mail: $email\n Message:\n $message";
+	$body = "Hola. Mi nombre es $name. Los contacto desde la web.\n Mi email es $email\n Les quiero preguntar lo siguiente:\n $message";
 
 	$headers = "From: ".$from;
 
@@ -56,7 +56,7 @@
 	if (mail ($to, $subject, $body, $headers)) {
 		$result .= '<div class="alert alert-success alert-dismissible" role="alert">';
  		$result .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
-		$result .= 'Thank You! I will be in touch';
+		$result .= '¡Gracias! estaremos en contacto';
 		$result .= '</div>';
 
 		echo $result;
@@ -66,7 +66,7 @@
 	$result = '';
 	$result .= '<div class="alert alert-danger alert-dismissible" role="alert">';
 	$result .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
-	$result .= 'Something bad happend during sending this message. Please try again later';
+	$result .= 'UPS! Por favor intenta nuevamente.';
 	$result .= '</div>';
 
 	echo $result;
