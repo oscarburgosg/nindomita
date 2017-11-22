@@ -758,9 +758,10 @@ a,
 a {
   color: #111; }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
-  color: #aaa;
+  color: #4d652e;
   outline: 0; }
 
 .bg-dark a {
@@ -978,13 +979,13 @@ Hero Slider
       font-weight: 400;
       font-size: 22px;
       color: #fff;
-      padding: 50px;
-      border-radius: 0 0 3px;
+      padding: 40px;
+      border-radius: 3px;
       box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
       display: inline-block;
       float: none; }
       .titan-caption .contentLogo a.navbar-brand img {
-        width: 150px; }
+        width: 130px; }
   .titan-caption .contentNav {
     width: 100%;
     float: left;
@@ -994,23 +995,25 @@ Hero Slider
       display: inline-block;
       float: none; }
       .titan-caption .contentNav .nav.navbar-nav li a {
-        border: #FFF solid 1px;
         color: #FFF;
         margin: 0 2px;
+        border: 1px solid rgba(255, 255, 255, 0.7);
         position: relative;
         font-weight: bold;
         font-size: 12px;
         font-family: "Roboto Condensed", sans-serif;
         text-transform: uppercase;
-        letter-spacing: 3px; }
+        letter-spacing: 3px;
+        background: rgba(255, 255, 255, 0.2); }
       .titan-caption .contentNav .nav.navbar-nav li a:hover,
       .titan-caption .contentNav .nav.navbar-nav li a:focus {
         background: none;
         color: #ccc; }
   .titan-caption .title span {
     display: inline-block;
-    background: #a6b84d;
-    padding: 20px 50px; }
+    padding: 20px 50px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.2); }
 
 .caption-content {
   display: table-cell;
@@ -1152,8 +1155,8 @@ General Styles - Owlcarousel
     .navbar ul.navbar-nav li > a {
       position: relative;
       margin: 0 0 0 5px;
-      color: #a6b84d;
-      border: #a6b84d solid 1px;
+      color: #678878;
+      border: #678878 solid 1px;
       background: #fff;
       font-weight: bold;
       font-size: 12px; }
@@ -1838,6 +1841,11 @@ Google map
 .testimonial-descr {
   color: rgba(255, 255, 255, 0.5);
   font-size: 11px; }
+
+.proyecto-slider {
+  border: #ccc solid 1px;
+  position: relative;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15); }
 
 /*--------------------------------------------------------------
 	Gallery
@@ -2599,7 +2607,7 @@ Google map
     padding-left: 15px;
     padding-right: 15px; }
 
-  /* Porqué dice Restaurant menu, porqué cresta pelao */
+  /* Restaurant menu */
   .menu-title,
   .menu-detail,
   .menu-price-detail {

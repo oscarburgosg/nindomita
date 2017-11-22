@@ -316,6 +316,13 @@ console.log('%c     Karin para ti.', 'background: #222; color: #bada55');
             });
         }
 
+        if ($('.proyecto-slider').length > 0 ) {
+            $('.proyecto-slider').flexslider( {
+                animation: "slide",
+                smoothHeight: true
+            });
+        }
+
 
         /* ---------------------------------------------- /*
          * Post Slider

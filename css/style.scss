@@ -908,9 +908,10 @@ a {
   color: #111;
 }
 
-a:hover, a:focus {
+a:hover, 
+a:focus {
   text-decoration: none;
-  color: #aaa;
+  color: $verdeoscuro;
   outline: 0;
 }
 
@@ -1169,14 +1170,14 @@ Hero Slider
       font-weight: 400;
       font-size: 22px;
       color: #fff;
-      padding:50px;
-      border-radius: 0 0 3px;
+      padding:40px;
+      border-radius: 3px;
       box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
       display: inline-block;
       float: none;
 
       img{
-        width:150px;
+        width:130px;
       }
     }
   }
@@ -1194,10 +1195,9 @@ Hero Slider
       li{
         
         a{
-          border:#FFF solid 1px;
           color:#FFF;
           margin:0 2px;
-
+          border: 1px solid rgba(255, 255, 255, 0.7);
           position: relative;
           font-weight: bold;
           font-size: 12px;
@@ -1205,6 +1205,8 @@ Hero Slider
           font-family: "Roboto Condensed", sans-serif;
           text-transform: uppercase;
           letter-spacing: 3px;
+
+          background: rgba(255, 255, 255, 0.2);
         }
 
         a:hover,
@@ -1220,8 +1222,9 @@ Hero Slider
 
     span{
       display: inline-block;
-      background: $verdeclaro;
-      padding:20px 50px;
+      padding: 20px 50px;
+      border-radius: 3px;
+      background: rgba(255, 255, 255, 0.2);
     }
   }
 }
@@ -1393,14 +1396,17 @@ General Styles - Owlcarousel
   ul.navbar-nav{
     margin-top:25px;
 
-    li > a {
-      position: relative;
-      margin:0 0 0 5px;
-      color:$verdeclaro;
-      border:$verdeclaro solid 1px;
-      background: #fff;
-      font-weight: bold;
-      font-size: 12px;
+    li{
+
+      > a {
+        position: relative;
+        margin:0 0 0 5px;
+        color:$verdemedio;
+        border:$verdemedio solid 1px;
+        background: #fff;
+        font-weight: bold;
+        font-size: 12px;
+      }
     }
   }
 }
@@ -2238,6 +2244,12 @@ Google map
 .testimonial-descr {
   color: rgba(255, 255, 255, 0.5);
   font-size: 11px;
+}
+
+.proyecto-slider{
+  border:#ccc solid 1px;
+  position: relative;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 /*--------------------------------------------------------------
