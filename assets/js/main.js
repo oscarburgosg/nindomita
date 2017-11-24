@@ -11,6 +11,11 @@ console.log('%c     Karin para ti.', 'background: #222; color: #bada55');
 
     $(document).ready(function() {
 
+        $('.navbar-toggle').click(function() {
+
+            $(".navbar-toggle").toggleClass("active");
+        });
+
         /* ---------------------------------------------- /*
          * Transparent navbar animation
          /* ---------------------------------------------- */
@@ -429,10 +434,37 @@ console.log('%c     Karin para ti.', 'background: #222; color: #bada55');
                 dotsSpeed: 400,
                 items: items,
                 navSpeed: 300,
-                autoplay: 2000
+                autoplay: 2000,
+
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:false
+                    },
+                    // breakpoint from 480 up
+                    480 : {
+                        items:2,
+                        nav:false
+                    },
+                    // breakpoint from 768 up
+                    768 :{
+                        items:items,
+                        nav:true,
+                        loop:false
+                    }
+                }
             });
 
         });
+
+        if ($(window).width() < 480) { // only for mobile devices
+          $('.owl-carousel .item').each(function(index) {
+            if (index % 2 == 0) { // wrap by 2 items
+              $(this).add($(this).next('.item')).wrapAll('<div class="item__col" />');
+            }
+          });
+        }
 
 
         /* ---------------------------------------------- /*
@@ -616,22 +648,22 @@ console.log('%c     Karin para ti.', 'background: #222; color: #bada55');
 
         /* ---------------------------------------------- /*
          * Google Map
-         /* ---------------------------------------------- */
+         /* ---------------------------------------------- 
 
         if($("#map").length == 0 || typeof google == 'undefined') return;
 
         // When the window has finished loading create our google map below
         google.maps.event.addDomListener(window, 'load', init);
 
-        var mkr = new google.maps.LatLng(40.6700, -74.2000);
-        var cntr = (mobileTest) ? mkr : new google.maps.LatLng(40.6700, -73.9400);
+        var mkr = new google.maps.LatLng(-33.4476316, -70.63943849999998);
+        var cntr = (mobileTest) ? mkr : new google.maps.LatLng(-33.4476316, -70.63943849999998);
 
         function init() {
             // Basic options for a simple Google Map
             // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
             var mapOptions = {
                 // How zoomed in you want the map to start at (always required)
-                zoom: 11,
+                zoom: 14,
                 scrollwheel: false,
                 // The latitude and longitude to center the map (always required)
                 center: cntr, // New York
@@ -861,6 +893,7 @@ console.log('%c     Karin para ti.', 'background: #222; color: #bada55');
                 map: map,
             });
         }
+        */
 
     });
 })(jQuery);

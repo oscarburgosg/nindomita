@@ -8,6 +8,10 @@ $verdeclaro: #a6b84d;
 $gris: #c0c1c6;
 $azul: #718a9d;
 
+  
+
+
+
 /*--------------------------------------------------------------
 	Common
 --------------------------------------------------------------*/
@@ -294,6 +298,12 @@ a,
 
 .bg-dark {
   background: #111;
+}
+
+.bg-azul,
+.bg-dark.bg-azul{
+  background: $azul;
+  padding: 50px 0;
 }
 
 .bg-verde,
@@ -1677,12 +1687,32 @@ Google map
 
 #map {
   height: 100%;
+  min-height: 500px;
   width: 100%;
 }
 
 #map img {
   max-width: none;
 }
+
+.contentMapa{
+  border:$azul solid;
+  border-width:1px 0;
+  padding:50px 0;
+}
+
+.info-window {
+
+    h3{
+      color: #718a9d;
+      font-family: 'Boogaloo', cursive;
+    }
+
+    .info-content {
+      color: #111;
+    }
+}
+
 
 /*--------------------------------------------------------------
 	Services & Features
@@ -2185,11 +2215,9 @@ Google map
 
 /**************************************************************/
 .test{
-  border:Red solid 1px;
 }
 
 .test.scroll{
-  border:purple solid 1px;
 }
 
 
@@ -2250,15 +2278,45 @@ Google map
   border:#ccc solid 1px;
   position: relative;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15);
+  margin: 40px 0 0;
 }
 
 /*--------------------------------------------------------------
 	Gallery
 --------------------------------------------------------------*/
+.contentGaleria{
+  position: relative;
+  
+  .owl-stage{
+
+    > .owl-item{
+      width:50%;
+    }
+  }
+  
+
+  .owl-nav{
+    
+    [class*="owl-"]{
+      padding:20px;
+      font-size: 36px;
+      position: absolute;
+      top:35%;
+    }
+
+    .owl-prev{
+      left:-55px;
+    }
+
+    .owl-next{
+      right:-55px;
+    }
+  }
+}
 .gallery-item {
   position: relative;
   text-align: center;
-  margin: 0 0 20px;
+  margin: 10px;
 }
 
 .gallery-image {
@@ -2970,7 +3028,7 @@ Google map
 
 @media (max-width: 1200px) {
   body{
-    border:pink dashed 5px;
+    
   }
 
   /* Features */
@@ -2981,7 +3039,7 @@ Google map
 
 @media (max-width: 1050px) {
   body{
-    border:green dashed 5px;
+   
   }
 
   /* Navbar */
@@ -2992,7 +3050,7 @@ Google map
 
 @media (max-width: 991px) {
   body{
-    border:yellow dashed 5px;
+    
   }
 
   .contentContactos{
@@ -3030,7 +3088,7 @@ Google map
 @media (max-width: 767px) {
   /*celu*/
   body{
-    border:red dashed 5px;
+    
   }
 
   .navbar.navbar-transparent{
@@ -3044,8 +3102,9 @@ Google map
     }
 
     .navbar-toggle{
-      border:#FFF solid 1px;
+      background: rgba(255, 255, 255, 0.2);
       border-radius: 1px;
+      margin: 33px 20px;
 
       .icon-bar{
         background: #FFF;
@@ -3053,8 +3112,46 @@ Google map
     }
   }
 
+  .navbar-header{
+    z-index: 1000;
+    position: relative;
+
+    .navbar-brand{
+      margin:0 0 0 30px;
+    }
+  }
+
+  .navbar-toggle{
+      margin: 33px 20px;
+  }
+
   .navbar-collapse{
-    border:red solid 1px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    width: 100%;
+    top:100%;
+
+    ul.navbar-nav{
+      margin:25px 0;
+
+      li:first-child a{
+        border-top:0;
+      }
+
+      li{
+
+        a{
+          background: none;
+          color: #111;
+          border-color: rgba(0, 0, 0, 0.8);
+          border-style: solid;
+          border-width: 1px 0 0;
+          font-size: 18px;
+          line-height: 260%;
+        }
+      }
+    }
   }
 
   /* Navbar */
@@ -3206,7 +3303,7 @@ Google map
 
 @media only screen and (max-width: 480px) {
   body{
-    border:lime dashed 5px;
+    
   }
 
   .work-item,

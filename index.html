@@ -47,7 +47,6 @@
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     <main>
       
-      
       <div class="page-loader">
         <div class="loader">Loading...</div>
       </div>
@@ -150,33 +149,93 @@
                   </p>
         				</div>
               </div>
-              <br><br>
+            
               <div class="col-sm-10 col-sm-offset-1">
-                <div class="proyecto-slider">
-                  <ul class="slides">
-                  <li>
-                    <img src="images/image1.jpg" alt="">
-                  </li>
-                  <li>
-                    <img src="images/image2.jpg" alt="">
-                  </li>
-                  <li>
-                    <img src="images/image3.jpg" alt="">
-                  </li>
-                  <li>
-                    <img src="images/image4.jpg" alt="">
-                  </li>
-                  <li>
-                    <img src="images/image5.jpg" alt="">
-                  </li>
-                  <li>
-                    <img src="images/image6.jpg" alt="">
-                  </li>
-                  <li>
-                    <img src="images/image7.jpg" alt="">
-                  </li>
-                  </ul>
+                <div class="row">
+                  <div class="contentGaleria">
+                    <div class="owl-carousel text-center" data-rows="2" data-items="3" data-pagination="true" data-navigation="true">
+                      <div class="owl-item">
+                        <div class="gallery-item">
+                          <div class="gallery-image">
+                            <a class="gallery" href="images/image1.jpg" title="Title 1"><img src="images/image1.jpg" alt="Gallery Image 1"/>
+                              <div class="gallery-caption">
+                                <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item">
+                        <div class="gallery-item">
+                          <div class="gallery-image">
+                            <a class="gallery" href="images/image2.jpg" title="Title 1"><img src="images/image2.jpg" alt="Gallery Image 2"/>
+                              <div class="gallery-caption">
+                                <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item">
+                        <div class="gallery-item">
+                          <div class="gallery-image">
+                            <a class="gallery" href="images/image3.jpg" title="Title 1"><img src="images/image3.jpg" alt="Gallery Image 2"/>
+                              <div class="gallery-caption">
+                                <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item">
+                        <div class="gallery-item">
+                          <div class="gallery-image">
+                            <a class="gallery" href="images/image4.jpg" title="Title 1"><img src="images/image4.jpg" alt="Gallery Image 2"/>
+                              <div class="gallery-caption">
+                                <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item">
+                        <div class="gallery-item">
+                          <div class="gallery-image">
+                            <a class="gallery" href="images/image5.jpg" title="Title 1"><img src="images/image5.jpg" alt="Gallery Image 2"/>
+                              <div class="gallery-caption">
+                                <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item">
+                        <div class="gallery-item">
+                          <div class="gallery-image">
+                            <a class="gallery" href="images/image6.jpg" title="Title 1"><img src="images/image6.jpg" alt="Gallery Image 2"/>
+                              <div class="gallery-caption">
+                                <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item">
+                        <div class="gallery-item">
+                          <div class="gallery-image">
+                            <a class="gallery" href="images/image7.jpg" title="Title 1"><img src="images/image7.jpg" alt="Gallery Image 2"/>
+                              <div class="gallery-caption">
+                                <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+
               </div>
             </div>
           </div>
@@ -227,13 +286,17 @@
               <div class="wow fadeInUp col-md-4 col-sm-6 col-xs-12">
                 <div class="features-item">
                   <div class="features-icon"><img src="images/calleicon1.jpg" alt=""></span></div>
-                  <h3 class="features-title font-alt">(Proximamente) Frente a carretera</h3>
+                  <h3 class="features-title font-alt">Frente a carretera (Proximamente) </h3>
 				  <h3 class="features-title font-alt">Desde $12.000.000</h3>
                   <p>Nuestras joyas ubicadas frente a ruta W30. Poseen una avenida de Eucaliptus en la entreda. Estas parcelas están a 3 minutos en vehiculo de la ruta 5 sur.</p>
                 </div>
               </div>
             </div>
           </div>
+        </section>
+
+        <section class="module contentMapa">
+          <div id="map"></div>
         </section>
         
         <section class="module pt-0 pb-0 contentSomos" id="somos">
@@ -260,6 +323,23 @@
         </section>
 
         <hr class="divider-w">
+
+        <section class="module bg-dark-30 pt-0 pb-0 parallax-bg imagen-separador" data-background="images/bg_1.jpg">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2 col-sm-offset-5">
+                <div class="alt-module-subtitle"><span class="holder-w"></span>
+                  <h5 class="font-serif">... tu destino</h5><span class="holder-w"></span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <h2 class="module-title font-alt mb-0">CHILOÉ</h2>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section class="module" id="contacto">
           <div class="container">
@@ -291,23 +371,6 @@
                   </div>
                 </form>
                 <div class="ajax-response font-alt" id="contactFormResponse"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="module bg-dark-30 pt-0 pb-0 parallax-bg imagen-separador" data-background="images/bg_1.jpg">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-2 col-sm-offset-5">
-                <div class="alt-module-subtitle"><span class="holder-w"></span>
-                  <h5 class="font-serif">... tu destino</h5><span class="holder-w"></span>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-8 col-sm-offset-2">
-                <h2 class="module-title font-alt mb-0">CHILOÉ</h2>
               </div>
             </div>
           </div>
@@ -372,20 +435,26 @@
     -->
     <script src="assets/lib/jquery/dist/jquery.js"></script>
     <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-
     
     <script src="assets/lib/wow/dist/wow.js"></script>
     <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
-    <!--<script src="assets/lib/isotope/dist/isotope.pkgd.js_"></script>-->
+    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
     <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
     <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+    
     <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/lib/owl.carousel/owl.rows.js"></script>
+
     <script src="assets/lib/smoothscroll.js"></script>
     <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
     <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
 
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+    
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX7DyDcfP6MyEOVYRHniWXMIU662ouHAQ"></script>
+    <script src="assets/js/mapa.js"></script>
 
   </body>
 </html>
