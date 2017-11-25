@@ -2,15 +2,15 @@ $(function () {
 
     function initMap() {
 
-        var location = new google.maps.LatLng(-42.05, -74.0333);
+        var location = new google.maps.LatLng(-42.025671, -73.877711);
 
         var mapCanvas = document.getElementById('map');
         var mapOptions = {
             center: location,
-            zoom: 14,
+            zoom: 13,
             panControl: false,
             scrollwheel: false,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
+            mapTypeId: google.maps.MapTypeId.HYBRID
         }
         var map = new google.maps.Map(mapCanvas, mapOptions);
 
