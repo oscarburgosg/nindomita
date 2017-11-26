@@ -440,12 +440,12 @@ console.log('%c     Karin para ti.', 'background: #222; color: #bada55');
                 responsive:{
                     0:{
                         items:1,
-                        nav:false
+                        nav:true
                     },
                     // breakpoint from 480 up
                     480 : {
                         items:2,
-                        nav:false
+                        nav:true
                     },
                     // breakpoint from 768 up
                     768 :{
