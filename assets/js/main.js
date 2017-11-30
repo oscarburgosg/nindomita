@@ -450,8 +450,7 @@ console.log('%c     Karin para ti.', 'background: #222; color: #bada55');
                     // breakpoint from 768 up
                     768 :{
                         items:items,
-                        nav:true,
-                        loop:false
+                        nav:true
                     }
                 }
             });

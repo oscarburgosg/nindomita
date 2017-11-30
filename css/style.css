@@ -1,4 +1,3 @@
-s
 .text-justify,
 .module-subtitle.text-justify {
   text-align: justify; }
@@ -1821,6 +1820,9 @@ Google map
 
 /**************************************************************/
 /**************************************************************/
+.separadorChepu .module-title {
+  margin: 75px 0 0; }
+
 .imagen-separador {
   min-height: 300px; }
   .imagen-separador .container {
@@ -1832,6 +1834,13 @@ Google map
         color: #FFF; }
     .imagen-separador .container .module-title {
       color: #FFF; }
+
+.contentChepu {
+  padding: 50px 0; }
+  .contentChepu div[class*="col-"] {
+    padding: 0; }
+    .contentChepu div[class*="col-"] .gallery-item {
+      margin: 2px; }
 
 /*--------------------------------------------------------------
 	Testimonial

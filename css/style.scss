@@ -7,7 +7,6 @@ $verdemedio: #678878;
 $verdeclaro: #a6b84d;
 $gris: #c0c1c6;
 $azul: #718a9d;
-s
   
 .text-justify,
 .module-subtitle.text-justify{
@@ -2225,6 +2224,13 @@ Google map
 
 
 /**************************************************************/
+.separadorChepu{
+
+  .module-title{
+    margin:75px 0 0;
+  }
+}
+
 .imagen-separador{
   min-height: 300px;
 
@@ -2243,6 +2249,18 @@ Google map
     .module-title{
       color:#FFF;
     }
+  }
+}
+
+.contentChepu{
+  padding:50px 0;
+
+  div[class*="col-"]{
+    padding:0;
+
+     .gallery-item{
+        margin:2px;
+      }
   }
 }
 
