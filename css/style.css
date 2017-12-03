@@ -814,7 +814,7 @@ blockquote {
   font-weight: 400;
   font-size: 30px;
   color: #718a9d;
-  margin: 0 0 70px;
+  margin: 0 0 20px;
   font-family: 'Boogaloo', cursive; }
 
 .module-subtitle {
@@ -1838,7 +1838,7 @@ Google map
 .iphone .imagen-separador {
   background-size: 100%;
   background-attachment: inherit;
-  min-height: 250px;
+  min-height: 100px;
   display: block; }
 .iphone .imagenChapu {
   background-image: url(../images/bg_1.jpg); }
@@ -1846,9 +1846,9 @@ Google map
   background-image: url(../images/bg_2.jpg); }
 
 .imagen-separador {
-  min-height: 300px; }
+  min-height: 200px; }
   .imagen-separador .container {
-    padding-top: 50px; }
+    padding-top: 10px; }
     .imagen-separador .container .alt-module-subtitle {
       color: red;
       margin-top: 50px; }
