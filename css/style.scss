@@ -1715,6 +1715,19 @@ Google map
     }
 }
 
+.comoLlegar{
+
+  .col-lg-6{
+    padding:0 45px;
+  }
+
+  .features-icon{
+
+    img{
+    }
+  }
+}
+
 
 /*--------------------------------------------------------------
 	Services & Features
@@ -2225,14 +2238,43 @@ Google map
 
 /**************************************************************/
 .separadorChepu{
+  background-image: url(../images/bg_2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 
   .module-title{
     margin:75px 0 0;
   }
 }
 
+.imagenChapu{
+  background-image: url(../images/bg_1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.iphone{
+
+  .imagen-separador{
+    background-size: 100%;
+    background-attachment: inherit;
+    min-height: 250px;
+    display:block;
+  }
+
+  .imagenChapu{
+    background-image: url(../images/bg_1.jpg);
+  }
+
+  .separadorChepu{
+    background-image: url(../images/bg_2.jpg);
+  }
+}
+
+
 .imagen-separador{
   min-height: 300px;
+  
 
   .container{
     padding-top: 50px;
@@ -2251,6 +2293,7 @@ Google map
     }
   }
 }
+
 
 .contentChepu{
   padding:50px 0;
@@ -2310,8 +2353,11 @@ Google map
   
   .owl-stage{
 
-    > .owl-item{
-      width:50%;
+    .owl-item{
+      width: 100%;
+
+      .gallery{
+      }
     }
   }
   
@@ -3372,7 +3418,7 @@ Google map
 }
 
 
-/************ border media *****************/
+/************ border media ****************
 
 
 @media (max-width: 1200px) {
@@ -3394,7 +3440,6 @@ Google map
 }
 
 @media (max-width: 767px) {
-  /*celu*/
   body{
     border:yellow dashed 5px;
   }
@@ -3405,3 +3450,5 @@ Google map
     border:black dashed 5px;
   }
 }
+
+*/

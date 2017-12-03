@@ -1398,6 +1398,9 @@ Google map
 .info-window .info-content {
   color: #111; }
 
+.comoLlegar .col-lg-6 {
+  padding: 0 45px; }
+
 /*--------------------------------------------------------------
 	Services & Features
 --------------------------------------------------------------*/
@@ -1820,8 +1823,27 @@ Google map
 
 /**************************************************************/
 /**************************************************************/
-.separadorChepu .module-title {
-  margin: 75px 0 0; }
+.separadorChepu {
+  background-image: url(../images/bg_2.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
+  .separadorChepu .module-title {
+    margin: 75px 0 0; }
+
+.imagenChapu {
+  background-image: url(../images/bg_1.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
+
+.iphone .imagen-separador {
+  background-size: 100%;
+  background-attachment: inherit;
+  min-height: 250px;
+  display: block; }
+.iphone .imagenChapu {
+  background-image: url(../images/bg_1.jpg); }
+.iphone .separadorChepu {
+  background-image: url(../images/bg_2.jpg); }
 
 .imagen-separador {
   min-height: 300px; }
@@ -1878,8 +1900,8 @@ Google map
 --------------------------------------------------------------*/
 .contentGaleria {
   position: relative; }
-  .contentGaleria .owl-stage > .owl-item {
-    width: 50%; }
+  .contentGaleria .owl-stage .owl-item {
+    width: 100%; }
   .contentGaleria .owl-nav [class*="owl-"] {
     padding: 20px;
     font-size: 36px;
@@ -2710,22 +2732,39 @@ Google map
   .works-grid-4 .work-item,
   .works-grid-5 .work-item {
     width: 100%; } }
-/************ border media *****************/
+/************ border media ****************
+
+
 @media (max-width: 1200px) {
-  body {
-    border: red dashed 5px; } }
+  body{
+    border:red dashed 5px;
+  }
+}
+
 @media (max-width: 1050px) {
-  body {
-    border: green dashed 5px; } }
+  body{
+   border:green dashed 5px;
+  }
+}
+
 @media (max-width: 991px) {
-  body {
-    border: pink dashed 5px; } }
+  body{
+    border:pink dashed 5px;
+  }
+}
+
 @media (max-width: 767px) {
-  /*celu*/
-  body {
-    border: yellow dashed 5px; } }
+  body{
+    border:yellow dashed 5px;
+  }
+}
+
 @media only screen and (max-width: 480px) {
-  body {
-    border: black dashed 5px; } }
+  body{
+    border:black dashed 5px;
+  }
+}
+
+*/
 
 /*# sourceMappingURL=style.css.map */

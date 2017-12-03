@@ -97,6 +97,14 @@ console.log('%c     Karin para ti.', 'background: #222; color: #bada55');
             navbarAnimation(navbar, homeSection, navHeight);
         });
 
+        if(navigator.userAgent.match(/iPad/)) {
+            $('html').addClass('iphone');
+        }
+
+        if(navigator.userAgent.match(/iPhone/)) {
+            $('html').addClass('iphone');
+        }
+
         /* ---------------------------------------------- /*
          * Set sections backgrounds
          /* ---------------------------------------------- */
