@@ -814,7 +814,7 @@ blockquote {
   font-weight: 400;
   font-size: 30px;
   color: #718a9d;
-  margin: 0 0 20px;
+  margin: 0 0 70px;
   font-family: 'Boogaloo', cursive; }
 
 .module-subtitle {
@@ -1827,8 +1827,6 @@ Google map
   background-image: url(../images/bg_2.jpg);
   background-size: cover;
   background-attachment: fixed; }
-  .separadorChepu .module-title {
-    margin: 75px 0 0; }
 
 .imagenChapu {
   background-image: url(../images/bg_1.jpg);
@@ -1838,24 +1836,18 @@ Google map
 .iphone .imagen-separador {
   background-size: 100%;
   background-attachment: inherit;
-  min-height: 100px;
   display: block; }
 .iphone .imagenChapu {
   background-image: url(../images/bg_1.jpg); }
 .iphone .separadorChepu {
   background-image: url(../images/bg_2.jpg); }
 
-.imagen-separador {
-  min-height: 200px; }
-  .imagen-separador .container {
-    padding-top: 10px; }
-    .imagen-separador .container .alt-module-subtitle {
-      color: red;
-      margin-top: 50px; }
-      .imagen-separador .container .alt-module-subtitle h5 {
-        color: #FFF; }
-    .imagen-separador .container .module-title {
-      color: #FFF; }
+.imagen-separador .container {
+  padding: 50px 0; }
+  .imagen-separador .container .alt-module-subtitle h5 {
+    color: #FFF; }
+  .imagen-separador .container .module-title {
+    color: #FFF; }
 
 .contentChepu {
   padding: 50px 0; }
@@ -2727,6 +2719,9 @@ Google map
   .align-left-sm {
     text-align: left; } }
 @media only screen and (max-width: 480px) {
+  .separadorChepu .module-title {
+    margin: 0 20px; }
+
   .work-item,
   .works-grid-3 .work-item,
   .works-grid-4 .work-item,

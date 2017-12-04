@@ -2243,7 +2243,7 @@ Google map
   background-attachment: fixed;
 
   .module-title{
-    margin:75px 0 0;
+    
   }
 }
 
@@ -2258,7 +2258,6 @@ Google map
   .imagen-separador{
     background-size: 100%;
     background-attachment: inherit;
-    min-height: 250px;
     display:block;
   }
 
@@ -2271,17 +2270,12 @@ Google map
   }
 }
 
-
-.imagen-separador{
-  min-height: 300px;
-  
+.imagen-separador{ 
 
   .container{
-    padding-top: 50px;
+    padding:50px 0;
 
     .alt-module-subtitle{
-      color:red;
-      margin-top: 50px;
 
       h5{
         color:#FFF;
@@ -3407,6 +3401,13 @@ Google map
 @media only screen and (max-width: 480px) {
   body{
     
+  }
+
+  .separadorChepu{
+
+    .module-title{
+      margin: 0 20px;
+    }
   }
 
   .work-item,
