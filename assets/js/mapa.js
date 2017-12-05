@@ -7,7 +7,7 @@ $(function () {
         var mapCanvas = document.getElementById('map');
         var mapOptions = {
             center: location,
-            zoom: 13,
+            zoom: 14,
             panControl: false,
             scrollwheel: false,
             mapTypeId: google.maps.MapTypeId.HYBRID
@@ -31,7 +31,7 @@ $(function () {
         var contentString = '<div class="info-window">' +
                 '<h3>Naturaleza Indomita</h3>' +
                 '<div class="info-content">' +
-                '<p>Sociedad inmobiliaria con presencia en Chiloé y el sur de Chile. Consulta acerca de inversión en nuestros proyectos.</p>' +
+                '<p>Proyecto parcelas Coipomó.</p>' +
                 '</div>' +
                 '</div>';
 
@@ -51,6 +51,23 @@ $(function () {
 
         map.set('styles', styles);
 
+		var poligono = [
+						new google.maps.LatLng(-42.025945, -73.879425),
+						new google.maps.LatLng(-42.014675, -73.879387),
+						new google.maps.LatLng(-42.014803, -73.877354),
+						new google.maps.LatLng(-42.026296, -73.875123)
+					   ];
+
+		campo = new google.maps.Polygon({
+		  paths: poligono,
+		  strokeColor: "#FF0000",
+		  strokeOpacity: 0.8,
+		  strokeWeight: 2,
+		  fillColor: "#FF0000",
+		  fillOpacity: 0.35
+		});
+
+		campo.setMap(map);
     }
 
     google.maps.event.addDomListener(window, 'load', initMap);
