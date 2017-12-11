@@ -1219,6 +1219,8 @@ Hero Slider
           letter-spacing: 3px;
 
           background: rgba(255, 255, 255, 0.2);
+
+          padding: 15px 10px;
         }
 
         a:hover,
@@ -3171,7 +3173,6 @@ Google map
 @media (max-width: 767px) {
   /*celu*/
   body{
-    
   }
 
   .contentGaleria{
@@ -3220,6 +3221,11 @@ Google map
 
   .navbar-toggle{
       margin: 33px 20px;
+  }
+
+  .navbar-fixed-bottom .navbar-collapse, 
+  .navbar-fixed-top .navbar-collapse{
+    max-height: 500px;
   }
 
   .navbar-collapse{

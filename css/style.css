@@ -1013,7 +1013,8 @@ Hero Slider
         font-family: "Roboto Condensed", sans-serif;
         text-transform: uppercase;
         letter-spacing: 3px;
-        background: rgba(255, 255, 255, 0.2); }
+        background: rgba(255, 255, 255, 0.2);
+        padding: 15px 10px; }
       .titan-caption .contentNav .nav.navbar-nav li a:hover,
       .titan-caption .contentNav .nav.navbar-nav li a:focus {
         background: none;
@@ -2560,6 +2561,10 @@ Google map
 
   .navbar-toggle {
     margin: 33px 20px; }
+
+  .navbar-fixed-bottom .navbar-collapse,
+  .navbar-fixed-top .navbar-collapse {
+    max-height: 500px; }
 
   .navbar-collapse {
     text-align: center;
