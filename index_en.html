@@ -1,148 +1,640 @@
-  <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--  
-    Document Title
-    =============================================
-    -->
-    <title>Naturaleza Indomita</title>
-    <!--  
-    Favicons
-    =============================================
-    -->
-
-
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <!--  
-    Stylesheets
-    =============================================
-    
-    -->
-    <!-- Default stylesheets-->
-    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Template specific stylesheets-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
-
-    <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
-    <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
-    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
-    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
-    <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
-    <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
-    <!-- Main stylesheet and color file-->
-    <link href="css/style.css" rel="stylesheet">
-
-    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
-  </head>
-  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
-    <main>
-      
-      
-      <div class="page-loader">
-        <div class="loader">Loading...</div>
-      </div>
-            
-      <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">
-              <img src="images/logo.svg" alt=""/>
-            </a>
-          </div>
-          <div class="collapse navbar-collapse" id="custom-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a class="section-scroll" href="#home">Home</a></li>
-              <li><a class="section-scroll" href="#somos">Quienes Somos</a></li>
-              <li><a class="section-scroll" href="#proyecto">Proyecto</a></li>
-              <li><a class="section-scroll" href="#contacto">Contacto</a></li>  
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <section 
-        class="home-section home-full-height bg-dark-30" 
-        id="home" 
-        data-background="images/bg02.gif">
-        <!--
-        <div 
-          class="video-player" 
-          data-property="{
-              videoURL:'https://www.youtube.com/watch?v=ChOhcHD8fBA', 
-              containment:'.home-section', 
-              startAt:18, 
-              mute:true, 
-              autoPlay:true, 
-              loop:true, 
-              opacity:1, 
-              showControls:false, 
-              showYTLogo:false, 
-              vol:25
-            }">  
-        </div>
-        
-        <div class="video-controls-box">
-          <div class="container">
-            <div class="video-controls">
-              <a class="fa fa-volume-up" id="video-volume" href="#">&nbsp;</a>
-              <a class="fa fa-pause" id="video-play" href="#">&nbsp;</a>
-            </div>
-          </div>
-        </div>
-        -->
-        <div class="titan-caption">
-          <div class="caption-content">
-            <div class="contentLogo">
-              <a class="navbar-brand">
-                <img src="images/logo.svg" alt=""/>
-              </a>
-            </div>
-            
-            <div class="clear"></div>
-            <div class="font-alt mb-40 title titan-title-size-3">
-              <span>English version is not ready yet</span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!--  
-    JavaScripts
-    =============================================
-    -->
-    <script src="assets/lib/jquery/dist/jquery.js"></script>
-    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    
-    <script src="assets/lib/wow/dist/wow.js"></script>
-    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
-    <!--<script src="assets/lib/isotope/dist/isotope.pkgd.js_"></script>-->
-    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
-    <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
-    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="assets/lib/smoothscroll.js"></script>
-    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
-    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
-
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
-
-  </body>
+  <!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  
+    Document Title
+    =============================================
+    -->
+    <title>Naturaleza Indomita - Coipomo Meadows</title>
+    <!--  
+    Favicons
+    =============================================
+    -->
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!--  
+    Stylesheets
+    =============================================
+    
+    -->
+    <!-- Default stylesheets-->
+    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+
+    <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
+    <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <!-- Main stylesheet and color file-->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      
+      <div class="page-loader">
+        <div class="loader">Loading...</div>
+      </div>
+            
+      <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.svg" alt=""/>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="custom-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="section-scroll" href="#home">Home</a></li>
+			  <li><a class="section-scroll" href="#proyecto">Land for Sale</a></li>
+              <li><a class="section-scroll" href="#somos">About Us</a></li>              
+              <li><a class="section-scroll" href="#contacto">Contact</a></li>
+			  <li><a class="section-scroll" href="index_en.html">Español</a></li>			  
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section 
+        class="home-section home-full-height bg-dark-30" 
+        id="home" 
+        data-background="images/bg03_cc7.gif">
+        <!--
+        <div 
+          class="video-player" 
+          data-property="{
+              videoURL:'https://www.youtube.com/watch?v=ChOhcHD8fBA', 
+              containment:'.home-section', 
+              startAt:18, 
+              mute:true, 
+              autoPlay:true, 
+              loop:true, 
+              opacity:1, 
+              showControls:false, 
+              showYTLogo:false, 
+              vol:25
+            }">  
+        </div>
+        
+        <div class="video-controls-box">
+          <div class="container">
+            <div class="video-controls">
+              <a class="fa fa-volume-up" id="video-volume" href="#">&nbsp;</a>
+              <a class="fa fa-pause" id="video-play" href="#">&nbsp;</a>
+            </div>
+          </div>
+        </div>
+        -->
+        <div class="titan-caption">
+          <div class="caption-content">
+            <div class="contentLogo">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" alt=""/>
+              </a>
+            </div>
+            <div class="contentNav hidden-xs">
+              <ul class="nav navbar-nav">
+                <li><a class="section-scroll" href="#home">Home</a></li>
+				<li><a class="section-scroll" href="#proyecto">Land for Sale</a></li>
+                <li><a class="section-scroll" href="#somos">About Us</a></li>                
+                <li><a class="section-scroll" href="#contacto">Contact</a></li>
+				<li><a class="section-scroll" href="index_en.html">Español</a></li>				
+              </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="font-alt mb-40 title titan-title-size-3">
+              <span>Live the dream</span>
+            </div>
+            <a class="section-scroll btn btn-d btn-round" href="#proyecto">Meet our Project</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="main">
+
+        <section class="module" id="proyecto">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <h2 class="module-title font-alt">Our Project : Coipomo Meadows</h2>
+                <div class="module-subtitle text-justify">
+                  <p>
+The Project consists in a total of 86.5 acres subdivided into more than 60 agro-residential lots of 1.24 acres each, located in Chiloe, in the south area of Chile, Coipomó an area mainly dedicated to the agricultural and tourism industry.
+<br>This project is very close to nature reserves, recognized for its excellent fly fishing, cabins and adventure tourism, such as the Rio Chepu and the Puñihuil penguin reserve, on the coast of the Pacific Ocean.
+<br>In general, lots are characterized by having terrains without slope and gentle hills, except in the extreme north of the property where the slope is pronounced more and lots of top view are obtained with natural streams within the lot.
+<br>It is also important to mention that the land has a layer of very shallow gravel, which is convenient if you want to use this material for the construction of houses and/or roads inside the lots.
+			
+                  </p>
+        				</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-1">
+                <div class="row">
+                  <div class="contentGaleria">
+                    <div class="owl-carousel text-center" data-rows="2" data-items="3" data-pagination="true" data-navigation="true">
+                      <div class="owl-item">
+                        <div class="gallery-item">
+                          <div class="gallery-image">
+                            <a class="gallery" href="images/p_img1_f.jpg" title="Meadow type lot. Meadows without old or high forest."><img src="images/p_img1_m.jpg" alt="Meadow type lot. Meadows without old or high forest."/>
+                              <div class="gallery-caption">
+                                <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item">
+                        <div class="gallery-item">
+                          <div class="gallery-image">
+                            <a class="gallery" href="images/p_img2_f.jpg" title="Meadow type lot. Meadows with no slope with small native trees."><img src="images/p_img2_m.jpg" alt="Meadow type lot. Meadows with no slope with small native trees."/>
+                              <div class="gallery-caption">
+                                <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item">
+                        <div class="gallery-item">
+                          <div class="gallery-image">
+                            <a class="gallery" href="images/p_img3_f.jpg" title="Meadow type lot. Meadows with no slope with small native trees."><img src="images/p_img3_m.jpg" alt="Meadow type lot. Meadows with no slope with small native trees."/>
+                              <div class="gallery-caption">
+                                <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item">
+                        <div class="gallery-item">
+                          <div class="gallery-image">
+                            <a class="gallery" href="images/p_img4_f.jpg" title="Meadow type lot. Lots with natural water flows."><img src="images/p_img4_m.jpg" alt="Meadow type lot. Lots with natural water flows."/>
+                              <div class="gallery-caption">
+                                <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item">
+                        <div class="gallery-item">
+                          <div class="gallery-image">
+                            <a class="gallery" href="images/p_img5_f.jpg" title="Meadow/forest type lot. Lot with small slope and native forest."><img src="images/p_img5_m.jpg" alt="Meadow/forest type lot. Lot with small slope and native forest."/>
+                              <div class="gallery-caption">
+                                <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item">
+                        <div class="gallery-item">
+                          <div class="gallery-image">
+                            <a class="gallery" href="images/p_img6_f.jpg" title="Native forest type lot. Contains small size forest and a perfect meadow to locate a house."><img src="images/p_img6_m.jpg" alt="Native forest type lot. Contains small size forest and a perfect meadow to locate a house."/>
+                              <div class="gallery-caption">
+                                <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item">
+                        <div class="gallery-item"><div class="gallery-image">
+                            <a class="gallery" href="images/p_img7_f.jpg" title="Native forest type lot. Contains small size forest and a perfect meadow to locate a house."><img src="images/p_img7_m.jpg" alt="Native forest type lot. Contains small size forest and a perfect meadow to locate a house."/>
+                            <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a></div>
+					  </div></div>
+					  <div class="owl-item">
+                        <div class="gallery-item"><div class="gallery-image">
+                            <a class="gallery" href="images/p_img8_f.jpg" title="Meadow/forest type lot. Lot with small slope and native forest."><img src="images/p_img8_m.jpg" alt="Meadow/forest type lot. Lot with small slope and native forest."/>
+                            <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a></div>
+					  </div></div>
+					  <div class="owl-item">
+                        <div class="gallery-item"><div class="gallery-image">
+                            <a class="gallery" href="images/p_img9_f.jpg" title="Natural rivers. Water is not a problem in all lots."><img src="images/p_img9_m.jpg" alt="Natural rivers. Water is not a problem in all lots."/>
+                            <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a></div>
+					  </div></div>
+					  <div class="owl-item">
+                        <div class="gallery-item"><div class="gallery-image">
+                            <a class="gallery" href="images/p_img10_f.jpg" title="Native forest type lot. Contains small size forest and a perfect meadow to locate a house."><img src="images/p_img10_m.jpg" alt="Native forest type lot. Contains small size forest and a perfect meadow to locate a house."/>
+                            <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a></div>
+					  </div></div>
+					  <div class="owl-item">
+                        <div class="gallery-item"><div class="gallery-image">
+                            <a class="gallery" href="images/p_img11_f.jpg" title="Meadow/forest type lot. Lot with small slope and native forest."><img src="images/p_img11_m.jpg" alt="Meadow/forest type lot. Lot with small slope and native forest."/>
+                            <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a></div>
+					  </div></div>
+					  <div class="owl-item">
+                        <div class="gallery-item"><div class="gallery-image">
+                            <a class="gallery" href="images/p_img12_f.jpg" title="Meadow/forest type lot. Lot with small slope and native forest."><img src="images/p_img12_m.jpg" alt="Meadow/forest type lot. Lot with small slope and native forest."/>
+                            <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a></div>
+					  </div></div>
+					  <div class="owl-item">
+                        <div class="gallery-item"><div class="gallery-image">
+                            <a class="gallery" href="images/p_img13_f.jpg" title="High and old forest type lot. This wonderful lot contains bigger native forest. This land has a slope and its own river."><img src="images/p_img13_m.jpg" alt="High and old forest type lot. This wonderful lot contains bigger native forest. This land has slope and its own river."/>
+                            <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a></div>
+					  </div></div>					  
+					  <div class="owl-item">
+                        <div class="gallery-item"><div class="gallery-image">
+                            <a class="gallery" href="images/p_img14_f.jpg" title="High and old forest type lot. This lot has an amazing view over the others lots."><img src="images/p_img14_m.jpg" alt="High and old forest type lot. This lot has an amazing view over the others lots."/>
+                            <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a></div>
+					  </div></div>					  
+					  <div class="owl-item">
+                        <div class="gallery-item"><div class="gallery-image">
+                            <a class="gallery" href="images/p_img15_f.jpg" title="High and old forest type lot. This wonderful lot contains bigger native forest. This land has a slope and its own river."><img src="images/p_img15_m.jpg" alt="High and old forest lot. This wonderful lot contains bigger native forest. This land has a slope and its own river."/>
+                            <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a></div>
+					  </div></div>					  
+					  <div class="owl-item">
+                        <div class="gallery-item"><div class="gallery-image">
+                            <a class="gallery" href="images/p_img16_f.jpg" title="High and old forest type lot. This wonderful lot also contains meadow to locate a house."><img src="images/p_img16_m.jpg" alt="High and old forest type lot. This wonderful lot also contains meadow to locate a house."/>
+                            <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a></div>
+					  </div></div>					  
+					</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="module bg-dark-30 pt-0 pb-0 parallax-bg imagen-separador separadorChepu">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <h2 class="module-title font-alt mb-0">10 minutes from Chepu</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="module contentChepu">
+          
+          <div class="container">
+            <div class="col-sm-10 col-sm-offset-1">
+              <div class="row multi-columns-row">
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="gallery-item">
+                    <div class="gallery-image">
+                      <a class="gallery" href="images/chepu_1_f.jpg" title="Chepu. Surroundings of the land. 10 minutes from fishing and hunting club.">
+                        <img src="images/chepu_1_m.jpg" />
+                        <div class="gallery-caption">
+                          <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="gallery-item">
+                    <div class="gallery-image">
+                      <a class="gallery" href="images/chepu_2_f.jpg" title="Chepu fishing cove. Place to rent boats and beautiful landscapes.">
+                        <img src="images/chepu_2_m.jpg" />
+                        <div class="gallery-caption">
+                          <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="gallery-item">
+                    <div class="gallery-image">
+                      <a class="gallery" href="images/chepu_3_f.jpg" title="Chepu fishing cove. Saint Peter, patron Saint of Fishermen.">
+                        <img src="images/chepu_3_m.jpg" />
+                        <div class="gallery-caption">
+                          <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="gallery-item">
+                    <div class="gallery-image">
+                      <a class="gallery" href="images/chepu_4_f.jpg" title="Chepu fishing cove. Located less than 10 minutes to the land.">
+                        <img src="images/chepu_4_m.jpg" />
+                        <div class="gallery-caption">
+                          <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="gallery-item">
+                    <div class="gallery-image">
+                      <a class="gallery" href="images/chepu_5_f.jpg" title="Chepu river. Navigable and located less than 10 minutes.">
+                        <img src="images/chepu_5_m.jpg" />
+                        <div class="gallery-caption">
+                          <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="gallery-item">
+                    <div class="gallery-image">
+                      <a class="gallery" href="images/chepu_6_f.jpg" title="Chepu river. Navigable and located less than 10 minutes.">
+                        <img src="images/chepu_6_m.jpg" />
+                        <div class="gallery-caption">
+                          <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="gallery-item">
+                    <div class="gallery-image">
+                      <a class="gallery" href="images/chepu_7_f.jpg" title="Chepu fishing cove. Located less than 10 minutes to the land.">
+                        <img src="images/chepu_7_m.jpg" />
+                        <div class="gallery-caption">
+                          <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="gallery-item">
+                    <div class="gallery-image">
+                      <a class="gallery" href="images/chepu_8_f.jpg" title="Chepu fishing cove. Located less than 10 minutes to the land.">
+                        <img src="images/chepu_8_m.jpg" />
+                        <div class="gallery-caption">
+                          <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="gallery-item">
+                    <div class="gallery-image">
+                      <a class="gallery" href="images/chepu_9_f.jpg" title="Chepu fishing cove. Located less than 10 minutes to the land.">
+                        <img src="images/chepu_9_m.jpg" />
+                        <div class="gallery-caption">
+                          <div class="gallery-icon"><span class="icon-magnifying-glass"></span></div>
+                        </div></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+	
+        <!-- mapa -->
+        <h2 class="module-title font-alt">Subdivision plan</h2>
+        <section class="module-small bg-dark bg-verde">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="module-subtitle">
+                 Following plan has been approved by all the Chilean government laws.
+                </div>
+              </div>
+              <div class="col-sm-8 col-sm-offset-2">
+                <img src="images/plano.png" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="module" id="services">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Property Values</h2>
+                <div class="module-subtitle font-serif"></div>
+              </div>
+            </div>
+            <div class="row multi-columns-row">
+              <div class="wow fadeInUp col-md-4 col-sm-6 col-xs-12">
+                <div class="features-item">
+					<div class="features-icon"><img src="images/praderaicon1.jpg" alt=""></div>
+					<h3 class="features-title font-alt">Meadow type lot</h3>
+					<h3 class="features-title font-alt">Starting price USD$11.500</h3>
+					<p class="text-justify">Lots mainly composed by terrains without slope and easily accessible land. Ideal to build immediately or with minimum effort.</p>
+                </div>
+              </div>
+              <div class="wow fadeInUp col-md-4 col-sm-6 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon"><img src="images/bosquenativoicon1.jpg" alt=""></span></div>
+                  <h3 class="features-title font-alt">Native forest type lot</h3>
+				  <h3 class="features-title font-alt">Starting price USD$9.200</h3>
+                  <p class="text-justify">Lots mainly composed by terrains with a forest of shrub species such as romerillo and calafate. Ideal to live the southen Chilean forest experience.</p>
+                </div>
+              </div>
+              <div class="wow fadeInUp col-md-4 col-sm-6 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon"><img src="images/calleicon1.jpg" alt=""></span></div>
+                  <h3 class="features-title font-alt">In front of road (Coming soon)</h3>
+				  <h3 class="features-title font-alt">Starting price USD$18.400</h3>
+                  <p class="text-justify">The best lots, located in front of W30 route. They contain an eucalyptus avenue in front of the land. These lots are located to 3 minutes to main Chilean south route.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="module contentMapa">
+          <div id="map"></div>
+        </section>
+        
+
+        <section class="module comoLlegar">
+          <div class="container">
+            <h2 class="module-title font-alt">
+              LOCATION
+            </h2>
+            <div class="row multi-columns-row">
+              <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="features-icon">
+                  <img src="images/cllegar_chacao.jpg" alt="">
+                </div>
+                <h5 class="font-alt">From Chacao - Puerto Montt</h5>
+                <p class="text-justify">
+                Take 5 south route from Chacao to Ancud. Go ahead for 12 miles to "El Transportista" restaurant (W30 route, Coipomo). Turn right and drive ahead for 3 minutes to the marked point on the map.
+                </p>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="features-icon">
+                  <img src="images/cllegar_castro.jpg" alt="">
+                </div>
+                <h5 class="font-alt">From Castro (Chiloe airport)</h5>
+                <p class="text-justify">
+                Take 5 south route to Chacao (north), drive for 45 minutes to "El Transportista" restaurant (W30 route, Coipomo). Turn left and drive ahead for 3 minutes to the marked point on the map.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="module pt-0 pb-0 contentSomos" id="somos">
+          <div class="row position-relative m-0">
+            <div class="col-xs-12 col-md-12 side-image-text">
+              <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <h2 class="module-title font-alt">
+                    ABOUT US
+                  </h2>
+                  <div class="module-subtitle">
+                    <p class="text-justify">
+                    Rodrigo Almonacid Arismendi and José Caro Muñoz, Software Engineers, are two professionals and founding partners of Inmobiliaria Naturaleza Indomita Ltda.
+                    <br>
+                    <br>
+                    These two entrepreneurs from the south of Chile, specifically the large island of Chiloe and the city of Talcahuano, were given the task of building a company whose main objective is to show the beauty and tranquility of a typical area of our country, such as it is Chiloe. 
+                    <br>
+                    <br>
+                    It is precisely because of the above that the company is inserted in the real estate sector, related to the sale of plots of pleasure located in quiet, safe areas and minutes from perfect places to relax.
+					</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="divider-w">
+
+        <section 
+          class="module bg-dark-30 pt-0 pb-0 imagen-separador imagenChapu"
+        >
+
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2 col-sm-offset-5">
+                <div class="alt-module-subtitle"><span class="holder-w"></span>
+                  <h5 class="font-serif">... next destination</h5><span class="holder-w"></span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <h2 class="module-title font-alt mb-0">CHILOE</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="module" id="contacto">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">CONTACT US</h2>
+                <div class="module-subtitle font-serif"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <form id="contactForm" role="form" method="post" action="php/contact.php">
+                  <div class="form-group">
+                    <label class="sr-only" for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="name" placeholder="NAME*" required="required" data-validation-required-message="Please enter your name."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="EMAIL*" required="required" data-validation-required-message="Please enter your email address."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="7" id="message" name="message" placeholder="MESSAGE*" required="required" data-validation-required-message="Please enter your message."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">SEND YOUR MESSAGE</button>
+                  </div>
+                </form>
+                <div class="ajax-response font-alt" id="contactFormResponse"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="footer bg-verde">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="widget">
+                  <h5 class="widget-title font-alt">Naturaleza Indomita</h5>
+                  <p>Real estate company with presence in Chiloe and southern Chile. Be part of our society, consult about the investment model of our projects.</p>
+                </div>
+              </div>
+              <div class="contentContactos col-sm-3 col-sm-offset-3">
+                <a href="tel:+56976191612">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    +56 9 73795158
+                </a>
+        				<br>
+        				<a href="tel:+56976191612">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    +56 9 88161024
+                </a>
+                <br>
+                <a href="mailto:info@naturalezaindomita.cl">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  info@naturalezaindomita.cl
+                </a>
+                <div class="footer-social-links">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                    /facebook
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-3 logo">
+                <img src="images/logo_negro.svg" width="50%" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <p class="copyright font-alt">&copy; 2017&nbsp;<a href="index_video.html">NATURALEZA INDOMITA</a>, All rights reserved</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+
+      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+    </main>
+
+    <!--  
+    JavaScripts
+    =============================================
+    -->
+    <script src="assets/lib/jquery/dist/jquery.js"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <script src="assets/lib/wow/dist/wow.js"></script>
+    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+    
+    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/lib/owl.carousel/owl.rows.js"></script>
+
+    <script src="assets/lib/smoothscroll.js"></script>
+    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX7DyDcfP6MyEOVYRHniWXMIU662ouHAQ"></script>
+    <script src="assets/js/mapa.js"></script>
+
+  </body>
 </html>
