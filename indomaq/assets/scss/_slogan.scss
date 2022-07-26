@@ -1,0 +1,27 @@
+.slogan{
+    padding:5rem 0;
+    @include flex;
+    flex-direction: column;
+
+    @include mobile{
+        padding:1rem 0;
+        flex-direction: column-reverse;
+    }
+
+    .section-title{
+        padding:20px 0;
+        text-transform: uppercase;
+        transform: rotate(-2deg);
+        text-align: center;
+    }
+
+
+    svg{
+        max-height: 200px;
+
+        @include mobile{
+            min-height: auto;
+            max-width: 90%;
+        }
+    }
+}

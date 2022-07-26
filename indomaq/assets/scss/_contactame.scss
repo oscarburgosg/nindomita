@@ -1,0 +1,62 @@
+.contactame{
+    background-color: $bgverde;
+    height: 6vh;
+    @include flex;
+    position: relative;
+    z-index: 1;
+    gap:10px;
+
+    @include mobile{
+        padding: 10px 0;
+        height: auto;
+
+        a{
+            display: inline-block;
+        }
+
+        span{
+            display: none;
+        }
+
+        i{
+            font-size: 22px;
+        }
+    }
+
+
+    &:before{
+        content: "";
+        height: 10px;
+        width: calc(100% + 3px);
+        position: absolute;
+        top: -36px;
+        left: 0;
+        display: block;
+        z-index: 1;
+        background: url(../img/bg_verde.svg) no-repeat center;
+        height: 50px;
+
+        @include mobile{
+            top:-28px;
+        }
+    }
+
+    &:after{
+        content: "";
+        height: 10px;
+        width: calc(100% + 3px);
+        position: absolute;
+        bottom: -36px;
+        left: 0;
+        display: block;
+        z-index: 1;
+        background: url(../img/bg_verde.svg) no-repeat center;
+        height: 50px;
+
+        transform: rotate(180deg);
+
+        @include mobile{
+            bottom:-28px;
+        }
+    }
+}

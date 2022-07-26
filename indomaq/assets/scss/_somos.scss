@@ -1,0 +1,53 @@
+.somos{
+    padding:5rem 0;
+    background: #2F2E41;
+    position: relative;
+
+    .texto {
+        
+        @include mobile{
+            padding:0 30px;
+        }
+        
+        .section-title{
+            color:#FFF;
+            width: 100%;
+        }
+    }
+
+    &:before{
+        content: "";
+        height: 10px;
+        width: calc(100% + 3px);
+        position: absolute;
+        top: -36px;
+        left: 0;
+        display: block;
+        z-index: 1;
+        background: url(../img/bg_negro.svg) no-repeat center;
+        height: 50px;
+
+        @include mobile{
+            top:-28px;
+        }
+    }
+
+    &:after{
+        content: "";
+        height: 10px;
+        width: calc(100% + 3px);
+        position: absolute;
+        bottom: -36px;
+        left: 0;
+        display: block;
+        z-index: 1;
+        background: url(../img/bg_negro.svg) no-repeat center;
+        height: 50px;
+
+        transform: rotate(180deg);
+
+        @include mobile{
+            bottom:-28px;
+        }
+    }
+}

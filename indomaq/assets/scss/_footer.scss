@@ -1,0 +1,86 @@
+
+footer {
+    position: relative;
+    padding: 150px 0px 0px;
+}
+
+@media (max-width: 767px) {
+    footer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    footer .logo {
+        max-width: 30%;
+        margin: 0 auto 15px;
+    }
+}
+
+footer .title {
+    font-size: 18px;
+    color: #333333;
+    font-weight: 500;
+    padding-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+footer .title span {
+    color: #ccc;
+    font-weight: 400;
+}
+
+@media (max-width: 767px) {
+    footer .title {
+        padding: 20px 0 0;
+    }
+}
+
+footer .textwidget p {
+    color: #333;
+}
+
+footer .footer-link li {
+    margin-bottom: 10px;
+}
+
+footer .footer-link li a {
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+}
+
+footer .footer-link li a:hover {
+    color: #F63854;
+}
+
+@media (max-width: 767px) {
+    footer .address {
+        margin: 0 30px;
+        text-align: left;
+    }
+}
+
+footer .address li {
+    margin-bottom: 15px;
+}
+
+footer .address li a {
+    color: #666666;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+footer .address li a i {
+    font-size: 22px;
+    width: 32px;
+    vertical-align: middle;
+    height: 36px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+    line-height: 32px;
+}

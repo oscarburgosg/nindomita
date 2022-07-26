@@ -1,0 +1,159 @@
+.proyectos {
+    text-align: center;
+    min-height: 100vh;
+    padding: 30px 0 40px;
+    background-color: #F5F5F5;
+    padding:5rem 0 0;
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:40px;
+        max-width: 90%;
+        margin:0 auto;
+
+        @include mobile{
+            max-width: 100%;
+            margin: 15px 0;
+            gap: 10px;
+            grid-template-columns: 1fr;
+        }
+
+        .card{
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding:30px;
+
+            @include mobile{
+                padding: 30px 15px;
+            }
+
+            h1{
+                color:$naranjo;
+                margin:0 0 10px;
+
+                @include mobile{
+                    font-size: 24px;
+                }
+            }
+
+            .cuantos{
+                padding: 10px 0;
+                color:#333;
+            }
+
+            img{
+                width: 100%;
+            }
+
+            .descripcion{
+                border:#ccc solid 1px;
+                width: 100%;
+                margin:10px 0 0;
+                border-radius: 5px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding: 15px 0;
+
+                @include mobile{
+                    grid-template-columns: 1fr;
+                }
+
+                .valor{
+                    @include flex;
+                    flex-direction: column;
+
+                    @include mobile{
+                        flex-direction: column-reverse;
+                        margin:0 0 20px;
+                    }
+
+                    span{
+                        color:$verde;
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+                }
+
+                .detalle{
+
+                    div{
+                        padding: 3px 0;
+
+                        display: flex;
+                        align-items: center;
+
+                        @include mobile{
+                            justify-content: center;
+                        }
+
+                        svg{
+                            margin:0 10px 0 0;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(2){
+
+                .descripcion{
+
+                    .detalle{
+
+                        div{
+
+                            &:nth-child(4){
+
+                                svg{
+                                    margin:0 10px 0 -21px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include mobile{
+        &.section-padding{
+            padding: 50px 40px;
+        }
+    }
+
+    .section-header {
+        margin: 0;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 767px) {
+
+
+    .proyectos .container {
+        padding: 0 0 0 0;
+    }
+
+    .proyectos .container .row>.slick-arrow {
+        display: none !important;
+    }
+
+    .proyectos .container .row .proyecto {
+        box-shadow: none;
+        border: #ccc solid 1px;
+    }
+
+    .proyectos .container .row .slick-dots {
+        bottom: -17px;
+    }
+
+    .proyectos .row .slick-slide {
+        padding: 0;
+    }
+
+    .proyectos .row .slick-slide .proyecto {
+        margin: 0 15px 0 0;
+    }
+}

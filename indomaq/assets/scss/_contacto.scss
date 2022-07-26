@@ -1,0 +1,45 @@
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding: 0 0 0;
+    background-color: #FFF;
+
+    @include flex;
+
+    margin:3rem 0 0;
+
+    .section-title{
+        color:#2F2E41;
+    }
+
+    @include mobile{
+        margin: -15px 0 0;
+    }
+    
+    .contentForm {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        margin: 30px;
+
+        @include mobile{
+            max-width: 100%;
+            margin:15px;
+        }
+    }
+}
+
+.contentForm {
+    background-color: $bgverde;
+    border-radius: 5px;
+
+    h3,h4{
+        color:#FFF;
+    }
+
+    .btn{
+        background-color: #FFF;
+        color: $naranjo;
+    }
+}

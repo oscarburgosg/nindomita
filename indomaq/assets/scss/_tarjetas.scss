@@ -1,0 +1,75 @@
+.tarjetas{
+    @include flex;
+    flex-direction: column;
+    min-height: 200px;
+    padding:2rem 0;
+    display: grid;
+    background-color: #1A99A9;
+    position: relative;
+
+    @include mobile{
+        min-height: auto;
+        padding: 1rem 0;
+    }
+
+    > div{
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+        &.contenido{
+            @include flex;
+            flex-direction: column;
+            color:#FFF;
+
+            .section-title{
+                color:#FFF;
+                padding:10px 0;
+                font-size: 18px;
+
+                @include mobile{
+                    margin:0;
+                }
+            }
+
+            svg{
+                max-width: 200px;
+            }
+        }
+    }
+
+    &:before{
+        content: "";
+        height: 10px;
+        width: calc(100% + 3px);
+        position: absolute;
+        top: -36px;
+        left: 0;
+        display: block;
+        z-index: 1;
+        background: url(../img/bg_verde.svg) no-repeat center;
+        height: 50px;
+
+        @include mobile{
+            top:-28px;
+        }
+    }
+
+    &:after{
+        content: "";
+        height: 10px;
+        width: calc(100% + 3px);
+        position: absolute;
+        bottom: -36px;
+        left: 0;
+        display: block;
+        z-index: 1;
+        background: url(../img/bg_verde.svg) no-repeat center;
+        height: 50px;
+
+        transform: rotate(180deg);
+
+        @include mobile{
+            bottom:-28px;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+@mixin btn {
+  border-radius: 6px;
+  font-size: 12px;
+  font-family: $lato;
+  background: #1AA99D;
+  min-width: 5rem;
+  color: #fff;
+
+  padding: 10px 30px;
+  cursor: pointer;
+  font-weight: 400;
+
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+
+.btn,
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  color: #333;
+  cursor: pointer;
+}
+
+.btn {
+  @include btn;
+
+  
+
+  &.gris{
+    background: #efefef;
+    color:$naranjo;
+  }
+
+  &.naranjo {
+    background-color: $naranjo;
+  }
+
+  &.verde {
+    background-color: $verde;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+
+  &:hover {
+    color: #333;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+  }
+
+  &:focus, 
+  &:active {
+    box-shadow: none;
+    outline: none;
+    color: #fff;
+  }
+}
+
+
+.btn.btn-white {
+  color: #F9A400;
+  background-color: #FFF;
+  border: 1px solid #F9A400;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+.btn.btn-white:hover, 
+.btn.btn-white:focus {
+  background-color: #efefef;
+}
+
+.btn.btn-border {
+  color: #F9A400;
+  background-color: transparent;
+  border: 1px solid #F9A400;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+.btn.btn-border:hover, .btn.btn-border:focus {
+  color: #fff;
+  background-color: #F9A400;
+}

@@ -1,0 +1,92 @@
+
+.solucion {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0;
+    background-color: #FFF;
+
+    padding: 5rem 0 0;
+
+    @include mobile{
+        padding: 0 !important;
+        margin: -15px 0 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        overflow: hidden;
+    
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                overflow: visible;
+            }
+        }
+
+        .texto {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 50px;
+            
+            .section-title{
+                width: 100%;
+            }
+        }
+    }
+
+    .imagen{
+        position: relative;
+
+        &:after{
+            content: "";
+            height: 10px;
+            width: calc(100% + 3px);
+            position: absolute;
+            top: -15px;
+            left: 0;
+            display: block;
+            z-index: 1;
+            background: url(../img/bg_blanco.svg) no-repeat center;
+            height: 50px;
+
+            transform: rotate(180deg);
+
+            @include mobile{
+                top:-22px;
+            }
+        }
+
+        .module-title {
+            color: #F9A400;
+        }
+        
+        .imagenChapu {
+            background-image: url(../img/bg_1.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            width: 100%;
+            min-height: 50vh;
+            color: #FFF;
+            @include flex;
+
+            @include mobile{
+                min-height: 150px;
+                height: 150px;
+                background-attachment: inherit;
+            }
+        }
+    }
+}

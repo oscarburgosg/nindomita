@@ -1,0 +1,76 @@
+
+
+.slick-slider {
+    padding: 0 0 36px;
+    position: relative;
+
+    .slick-arrow {
+        bottom: 23px;
+        top: inherit;
+        transform: inherit;
+        color: #333;
+        -webkit-transition: all 0.25s;
+        -o-transition: all 0.25s;
+        transition: all 0.25s;
+        z-index: 2;
+    }
+
+    @include mobile{
+        margin: 0;
+    }
+
+    .slick-arrow{
+
+        @include mobile{
+
+            display: none!important;
+        }
+    }
+}
+
+
+.slick-slider .slick-arrow:before {
+    color: #333;
+    opacity: 1;
+}
+
+.slick-slider .slick-arrow.slick-next {
+    right: 15px;
+}
+
+.slick-slider .slick-arrow.slick-next:before {
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 18px;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.slick-slider .slick-arrow.slick-prev {
+    left: inherit;
+    right: 60px;
+}
+
+.slick-slider .slick-arrow.slick-prev:before {
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 18px;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.slick-slider .slick-arrow.slick-disabled {
+    opacity: 0.4;
+}
+
+.slick-slider .slick-list .slick-slide img {
+    width: 100%;
+}
