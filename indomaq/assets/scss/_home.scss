@@ -1,5 +1,5 @@
 .home{
-    min-height: 650px;
+    // min-height: 650px;
     position: relative;
     overflow: hidden;
     padding: 250px 0 0;
@@ -44,6 +44,21 @@
 
             @include mobile{
                 padding:0 0 10px;
+            }
+
+            .slick-list{
+
+                .slick-track{
+
+                    .slick-slide{
+                        // max-height: 450px;
+                        @include flex;
+
+                        img{
+                            max-width: calc(100vw - 20%);
+                        }
+                    }
+                }
             }
 
             &:before{

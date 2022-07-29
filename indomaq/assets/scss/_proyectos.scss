@@ -10,7 +10,8 @@
         grid-template-columns: 1fr 1fr;
         gap:40px;
         max-width: 90%;
-        margin:0 auto;
+        margin:0 auto; 
+        padding:3rem 0;
 
         @include mobile{
             max-width: 100%;
@@ -33,6 +34,9 @@
             h1{
                 color:$naranjo;
                 margin:0 0 10px;
+                font-family: $lato;
+                font-weight: 100;
+                font-size: 30px;
 
                 @include mobile{
                     font-size: 24px;
@@ -91,25 +95,6 @@
 
                         svg{
                             margin:0 10px 0 0;
-                        }
-                    }
-                }
-            }
-
-            &:nth-child(2){
-
-                .descripcion{
-
-                    .detalle{
-
-                        div{
-
-                            &:nth-child(4){
-
-                                svg{
-                                    margin:0 10px 0 -21px;
-                                }
-                            }
                         }
                     }
                 }

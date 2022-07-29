@@ -103,11 +103,12 @@
     }
 
     //carrusel home
-    $('.principales div').slick({
-      infinite: false,
-      speed: 300,
+    $('.principales > div').slick({
+      infinite: true,
+      speed: 100,
       dots: true,
       navigation: false,
+      autoplay: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       responsive: [
