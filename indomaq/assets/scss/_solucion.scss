@@ -49,23 +49,22 @@
     .imagen{
         position: relative;
 
-        &:after{
+        &:before{
             content: "";
-            height: 10px;
             width: calc(100% + 3px);
             position: absolute;
-            top: -15px;
             left: 0;
             display: block;
             z-index: 1;
-            background: url(../img/bg_blanco.svg) no-repeat center;
-            height: 50px;
+            background: url(../img/bg_blanco.svg) no-repeat;
+            height: calc(100% - 80%);
+            top:0;
+            background-size: 100%;
+            background-position: 0 100%;
+
+            border:red solid 1px;
 
             transform: rotate(180deg);
-
-            @include mobile{
-                top:-22px;
-            }
         }
 
         .module-title {

@@ -20,6 +20,7 @@
         transform: translateY(-25px);
 
         @include mobile{
+            display: none;
             transform: translateY(0);
         }
     }
@@ -56,6 +57,10 @@
 
                         img{
                             max-width: calc(100vw - 20%);
+
+                            @include mobile{
+                                max-width: 100%;
+                            }
                         }
                     }
                 }

@@ -1,0 +1,72 @@
+.modal{
+    border:red solid 1px;
+
+    .modal-header{
+        padding:0;
+        border:0;
+        position: relative;
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            margin: 0 0 0 auto;
+            padding: 0;
+            z-index: 1;
+        }
+    }
+
+    .modal-dialog{
+        max-width: 1140px;
+
+        .modal-content{
+            background-color: #F5F5F5;
+        }
+    }
+
+    .proyectos{
+        padding: 0;
+        min-height: auto;
+
+        .cards{
+            margin: 10px 0;
+
+            .card{
+                padding:0;
+
+                .descripcion{
+                    border: 0;
+                    background: transparent;
+                    grid-template-columns: 1fr 1fr 1.2fr;
+
+                    @include mobile{
+                        grid-template-columns: 1fr;
+                    }
+        
+                    .detalle{
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                    }
+        
+                    .imagen{
+                        padding: 10px 50px;
+                        border-left: 1px solid #1AA99D;
+                    }
+                }
+            }
+        }
+
+        .incluye{
+            padding:15px 0;
+            width: 100%;
+            text-align: center;
+            grid-column: 1/5;
+
+            h2{
+                font-size: 24px;
+                margin:0 0 15px;
+            }
+        }
+    }
+}

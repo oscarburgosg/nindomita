@@ -1,10 +1,15 @@
 .contactame{
-    background-color: $bgverde;
-    height: 6vh;
+    background-color: #1A99A9;
+    height: auto;
     @include flex;
     position: relative;
     z-index: 1;
-    gap:10px;
+    gap: 10px;
+    padding: 10px;
+
+    .escribenos{
+        display:none;
+    }
 
     @include mobile{
         padding: 10px 0;
@@ -21,42 +26,43 @@
         i{
             font-size: 22px;
         }
-    }
 
+        .escribenos{
+            display:block;
+        }
+    }
 
     &:before{
         content: "";
-        height: 10px;
         width: calc(100% + 3px);
         position: absolute;
-        top: -36px;
         left: 0;
         display: block;
         z-index: 1;
-        background: url(../img/bg_verde.svg) no-repeat center;
-        height: 50px;
+        background: url(../img/bg_verde.svg) no-repeat;
+        height: calc(100% - 40%);
+        top: -60%;
+        background-size: 100%;
+        background-position: 0 100%;
 
-        @include mobile{
-            top:-28px;
-        }
+        border:red solid 1px;
     }
 
     &:after{
         content: "";
-        height: 10px;
         width: calc(100% + 3px);
         position: absolute;
-        bottom: -36px;
         left: 0;
         display: block;
         z-index: 1;
-        background: url(../img/bg_verde.svg) no-repeat center;
-        height: 50px;
+        background: url(../img/bg_verde.svg) no-repeat;
+        height: calc(100% - 40%);
+        bottom: -60%;
+        background-size: 100%;
+        background-position: 0 100%;
 
         transform: rotate(180deg);
 
-        @include mobile{
-            bottom:-28px;
-        }
+        border:red solid 1px;
     }
 }

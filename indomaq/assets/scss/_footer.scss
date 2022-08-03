@@ -2,85 +2,83 @@
 footer {
     position: relative;
     padding: 150px 0px 0px;
-}
 
-@media (max-width: 767px) {
-    footer {
+    @include mobile{
         text-align: center;
+
+        .logo {
+            max-width: 60%;
+            margin: 0 auto 15px;
+        }
     }
-}
 
-@media (max-width: 767px) {
-    footer .logo {
-        max-width: 30%;
-        margin: 0 auto 15px;
+    .title {
+        font-size: 18px;
+        color: #333333;
+        font-weight: 500;
+        padding-bottom: 20px;
+        letter-spacing: 0.5px;
+
+        @include mobile{
+            padding: 20px 0 0;
+        }
+
+        span {
+            color: #ccc;
+            font-weight: 400;
+        }
     }
-}
 
-footer .title {
-    font-size: 18px;
-    color: #333333;
-    font-weight: 500;
-    padding-bottom: 20px;
-    letter-spacing: 0.5px;
-}
+    .address{
 
-footer .title span {
-    color: #ccc;
-    font-weight: 400;
-}
+        @include mobile{
+            margin: 0 30px;
+            text-align: left;
+        }
 
-@media (max-width: 767px) {
-    footer .title {
-        padding: 20px 0 0;
+        li {
+            margin-bottom: 15px;
+    
+            a {
+                color: #666666;
+                font-size: 14px;
+                line-height: 30px;
+                font-weight: 400;
+    
+                i {
+                    font-size: 22px;
+                    width: 32px;
+                    vertical-align: middle;
+                    height: 36px;
+                    text-align: center;
+                    display: inline-block;
+                    float: left;
+                    margin-right: 5px;
+                    line-height: 32px;
+                }
+            }
+        }
     }
-}
 
-footer .textwidget p {
-    color: #333;
-}
-
-footer .footer-link li {
-    margin-bottom: 10px;
-}
-
-footer .footer-link li a {
-    color: #333;
-    font-size: 14px;
-    font-weight: 400;
-    position: relative;
-}
-
-footer .footer-link li a:hover {
-    color: #F63854;
-}
-
-@media (max-width: 767px) {
-    footer .address {
-        margin: 0 30px;
-        text-align: left;
+    .textwidget p {
+        color: #333;
     }
-}
 
-footer .address li {
-    margin-bottom: 15px;
-}
+    .footer-link{
 
-footer .address li a {
-    color: #666666;
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
-}
-
-footer .address li a i {
-    font-size: 22px;
-    width: 32px;
-    vertical-align: middle;
-    height: 36px;
-    text-align: center;
-    display: inline-block;
-    float: left;
-    margin-right: 5px;
-    line-height: 32px;
+        li {
+            margin-bottom: 10px;
+    
+            a {
+                color: #333;
+                font-size: 14px;
+                font-weight: 400;
+                position: relative;
+    
+                &:hover {
+                    color: #F63854;
+                }
+            }
+        }
+    }
 }

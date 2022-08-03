@@ -21,37 +21,35 @@
 
     &:before{
         content: "";
-        height: 10px;
         width: calc(100% + 3px);
         position: absolute;
-        top: -36px;
         left: 0;
         display: block;
         z-index: 1;
-        background: url(../img/bg_negro.svg) no-repeat center;
-        height: 50px;
+        background: url(../img/bg_negro.svg) no-repeat;
+        height: calc(100% - 80%);
+        top: -20%;
+        background-size: 100%;
+        background-position: 0 100%;
 
-        @include mobile{
-            top:-28px;
-        }
+        border:red solid 1px;
     }
 
     &:after{
         content: "";
-        height: 10px;
         width: calc(100% + 3px);
         position: absolute;
-        bottom: -36px;
         left: 0;
         display: block;
         z-index: 1;
-        background: url(../img/bg_negro.svg) no-repeat center;
-        height: 50px;
+        background: url(../img/bg_negro.svg) no-repeat;
+        height: calc(100% - 80%);
+        bottom: -20%;
+        background-size: 100%;
+        background-position: 0 100%;
 
         transform: rotate(180deg);
 
-        @include mobile{
-            bottom:-28px;
-        }
+        border:red solid 1px;
     }
 }

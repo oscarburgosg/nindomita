@@ -1,0 +1,47 @@
+@include lime {  
+    body{
+        border:lime dashed 5px;
+    }
+}
+
+@include red {  
+    body{
+        border:red dashed 5px;
+    }
+}
+
+@include orange {  
+    body{
+        border:orange dashed 5px;
+    }
+}
+
+@include green {  
+    body{
+        border:green dashed 5px;
+    }
+}
+
+/* @include desktop {  
+    body{
+        border:black dashed 5px;
+    }
+}
+
+@include mobile {  
+    body{
+        border:pink dashed 5px;
+    }
+} */
+
+@include purple {  
+    body{
+        border:purple dashed 5px;
+    }
+}
+
+@include lightblue {  
+    body{
+        border:lightblue dashed 5px;
+    }
+}

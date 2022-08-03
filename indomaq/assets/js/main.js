@@ -55,9 +55,9 @@
       }, 500);
     });
 
-    $('.contactame.mobile .escribenos').click(function () {
+    $('.escribenos').click(function () {
       $('html, body').animate({
-          scrollTop: ($('#contacto').offset().top) - 150
+          scrollTop: ($('#contacto').offset().top) - 50
       }, 500);
     });
 
@@ -82,25 +82,25 @@
 		});
 
     // carrusel mobile proyectos
-    $('.proyectos .cards').slick({
-			infinite: false,
-      settings: "unslick",
-      responsive: [
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1.2,
-            slidesToScroll: 1,
-            dots: true
-          }
-        }
-      ]
-		});
+    // $('.proyectos .cards').slick({
+		// 	infinite: false,
+    //   settings: "unslick",
+    //   responsive: [
+    //     {
+    //       breakpoint: 480,
+    //       settings: {
+    //         slidesToShow: 1.2,
+    //         slidesToScroll: 1,
+    //         dots: true
+    //       }
+    //     }
+    //   ]
+		// });
 
     // destruir carrusel desktop proyectos
-    if ($(window).width() >= 767) {
-      $('.proyectos .cards').slick('unslick');
-    }
+    // if ($(window).width() >= 767) {
+    //   $('.proyectos .cards').slick('unslick');
+    // }
 
     //carrusel home
     $('.principales > div').slick({
@@ -122,6 +122,27 @@
           }
       ]
     });
+
+    if ($(window).width() <= 767) {
+    
+
+      $('.otras_soluciones').slick({
+        infinite: false,
+        settings: "unslick",
+        navigation: false,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true
+            }
+          }
+        ]
+      });
+
+    }
 
     // if ($(window).width() >= 767) {
     //   $('.interes .grid').slick('unslick');

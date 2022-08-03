@@ -6,18 +6,22 @@
     padding:5rem 0 0;
 
     .cards{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap:40px;
-        max-width: 90%;
-        margin:0 auto; 
-        padding:3rem 0;
 
-        @include mobile{
-            max-width: 100%;
-            margin: 15px 0;
-            gap: 10px;
-            grid-template-columns: 1fr;
+        &:not(.single){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap:40px;
+            max-width: 90%;
+            margin:0 auto; 
+            padding:3rem 0;
+
+            @include mobile{
+                max-width: 100vw;
+                margin: 15px -30px;
+                gap: 10px;
+                grid-template-columns: 1fr;
+                padding: 0;
+            }
         }
 
         .card{
@@ -70,8 +74,12 @@
                     flex-direction: column;
 
                     @include mobile{
-                        flex-direction: column-reverse;
                         margin:0 0 20px;
+                        padding:0 10px;
+
+                        br:nth-child(2){
+                            display:none;
+                        }
                     }
 
                     span{
@@ -98,6 +106,84 @@
                         }
                     }
                 }
+
+                .kit_estanque{
+                    padding: 10px;
+                }
+            }
+
+            &.colector{
+                grid-column: 1/3;
+
+                @include mobile{
+                    grid-column: 1/2;
+                }
+
+                .descripcion{
+                    grid-template-columns: 1fr 1fr 1.5fr;
+
+                    @include mobile{
+                        grid-template-columns: 1fr;
+                        padding:0 10px;
+                    }
+
+                    .detalle{
+                        display: flex;;
+                        justify-content: center;
+                        flex-direction: column;
+                    }
+
+                    .incluye{
+                        padding:10px 50px;
+                        border-left:1px solid $verde;
+
+                        @include mobile{
+                            border:0;
+                            border-top:1px solid $verde;
+                        }
+                    }
+                }
+            }
+
+            &.otras{
+                grid-column: 1/3;
+
+                @include mobile{
+                    grid-column: 1/2;
+                }
+
+                .otras_soluciones{
+                    width: 100%;
+                    display: flex;
+                    gap:10px;
+
+                    .descripcion{
+                        display: flex!important;
+                        @include flex;
+                        flex-direction: column;
+                        padding:10px;
+                
+                        br{
+                            display: none;
+                        }
+                
+                        .valor{
+                
+                            h1{
+                                margin:0;
+                            }
+                        }
+                
+                        div{
+                            padding:10px 0 0;
+                
+                            &:last-child{
+                                grid-column: 1/3;
+                            }
+                        }
+                    }
+                }
+                
             }
         }
     }
@@ -113,6 +199,7 @@
         padding: 0 10px;
     }
 }
+
 
 @media (max-width: 767px) {
 
