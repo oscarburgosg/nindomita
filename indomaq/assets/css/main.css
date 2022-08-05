@@ -94,7 +94,8 @@ a {
 }
 .btn.gris {
   background: #efefef;
-  color: #F15A24;
+  color: #F15A24 !important;
+  border: 0;
 }
 .btn.naranjo {
   background-color: #F15A24;
@@ -106,11 +107,13 @@ a {
   outline: none !important;
 }
 .btn:hover {
-  color: #333;
+  color: #fff !important;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
+  background-color: #333;
+  border-color: #333;
 }
 .btn:focus, .btn:active {
   box-shadow: none;
@@ -819,6 +822,9 @@ textarea {
     transform: translateY(0);
   }
 }
+.home .container > .row {
+  justify-content: flex-end;
+}
 .home .principales {
   grid-column: 1/2;
   grid-row: 1/2;
@@ -973,7 +979,12 @@ textarea {
   top: -20%;
   background-size: 100%;
   background-position: 0 100%;
-  border: red solid 1px;
+}
+@media (max-width: 480px) {
+  .tarjetas:before {
+    right: -5px;
+    width: calc(100% + 10px);
+  }
 }
 .tarjetas:after {
   content: "";
@@ -988,7 +999,12 @@ textarea {
   background-size: 100%;
   background-position: 0 100%;
   transform: rotate(180deg);
-  border: red solid 1px;
+}
+@media (max-width: 480px) {
+  .tarjetas:after {
+    left: -5px;
+    width: calc(100% + 10px);
+  }
 }
 
 .proyectos {
@@ -1016,7 +1032,7 @@ textarea {
   }
 }
 .proyectos .cards .card {
-  border-radius: 15px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -1312,8 +1328,13 @@ textarea {
   top: 0;
   background-size: 100%;
   background-position: 0 100%;
-  border: red solid 1px;
   transform: rotate(180deg);
+}
+@media (max-width: 480px) {
+  .solucion .imagen:before {
+    right: -5px;
+    width: calc(100% + 10px);
+  }
 }
 .solucion .imagen .module-title {
   color: #F9A400;
@@ -1367,7 +1388,12 @@ textarea {
   top: -20%;
   background-size: 100%;
   background-position: 0 100%;
-  border: red solid 1px;
+}
+@media (max-width: 480px) {
+  .somos:before {
+    right: -5px;
+    width: calc(100% + 10px);
+  }
 }
 .somos:after {
   content: "";
@@ -1382,7 +1408,12 @@ textarea {
   background-size: 100%;
   background-position: 0 100%;
   transform: rotate(180deg);
-  border: red solid 1px;
+}
+@media (max-width: 480px) {
+  .somos:after {
+    left: -5px;
+    width: calc(100% + 10px);
+  }
 }
 
 .contacto {
@@ -1417,26 +1448,14 @@ textarea {
 }
 
 .contentForm {
+  padding: 30px;
+  position: relative;
+  box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
   background-color: #1A99A9;
   border-radius: 5px;
 }
 .contentForm h3, .contentForm h4 {
   color: #FFF;
-}
-.contentForm .btn {
-  background-color: #FFF;
-  color: #F15A24;
-}
-
-.contentForm {
-  padding: 30px;
-  position: relative;
-  box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
-}
-.contentForm .btn:hover {
-  background-color: #A8A8A8;
-  color: #FFF;
-  opacity: 0.8;
 }
 .contentForm h3 {
   font-size: 18px;
@@ -1449,6 +1468,14 @@ textarea {
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+.contentForm .btn {
+  background-color: #FFF;
+  color: #F15A24 !important;
+}
+.contentForm .btn:hover {
+  border-color: #efefef !important;
+  opacity: 0.8;
 }
 
 .contentForm form .form-group {
@@ -1531,7 +1558,12 @@ textarea {
   top: -60%;
   background-size: 100%;
   background-position: 0 100%;
-  border: red solid 1px;
+}
+@media (max-width: 480px) {
+  .contactame:before {
+    right: -5px;
+    width: calc(100% + 10px);
+  }
 }
 .contactame:after {
   content: "";
@@ -1546,7 +1578,12 @@ textarea {
   background-size: 100%;
   background-position: 0 100%;
   transform: rotate(180deg);
-  border: red solid 1px;
+}
+@media (max-width: 480px) {
+  .contactame:after {
+    left: -5px;
+    width: calc(100% + 10px);
+  }
 }
 
 footer {
@@ -1620,9 +1657,6 @@ footer .footer-link li a:hover {
   color: #F63854;
 }
 
-.modal {
-  border: red solid 1px;
-}
 .modal .modal-header {
   padding: 0;
   border: 0;
@@ -1680,48 +1714,6 @@ footer .footer-link li a:hover {
 .modal .proyectos .incluye h2 {
   font-size: 24px;
   margin: 0 0 15px;
-}
-
-@media (min-width: 1400px) {
-  body {
-    border: lime dashed 5px;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1399px) {
-  body {
-    border: red dashed 5px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  body {
-    border: orange dashed 5px;
-  }
-}
-@media (max-width: 991px) {
-  body {
-    border: green dashed 5px;
-  }
-}
-/* @include desktop {  
-    body{
-        border:black dashed 5px;
-    }
-}
-
-@include mobile {  
-    body{
-        border:pink dashed 5px;
-    }
-} */
-@media (max-width: 767px) {
-  body {
-    border: purple dashed 5px;
-  }
-}
-@media (max-width: 480px) {
-  body {
-    border: lightblue dashed 5px;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

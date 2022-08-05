@@ -23,6 +23,10 @@
             display: none;
             transform: translateY(0);
         }
+
+        > .row{
+            justify-content: flex-end;
+        }
     }
 
     .principales{

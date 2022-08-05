@@ -50,7 +50,10 @@
         background-size: 100%;
         background-position: 0 100%;
 
-        border:red solid 1px;
+        @include lightblue{
+            right:-5px;
+            width: calc(100% + 10px);
+        }
     }
 
     &:after{
@@ -68,6 +71,9 @@
 
         transform: rotate(180deg);
 
-        border:red solid 1px;
+        @include lightblue{
+            left:-5px;
+            width: calc(100% + 10px);
+        }
     }
 }

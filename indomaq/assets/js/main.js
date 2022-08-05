@@ -105,7 +105,7 @@
     //carrusel home
     $('.principales > div').slick({
       infinite: true,
-      speed: 100,
+      speed: 200,
       dots: true,
       navigation: false,
       autoplay: true,

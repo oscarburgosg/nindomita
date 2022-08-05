@@ -62,9 +62,12 @@
             background-size: 100%;
             background-position: 0 100%;
 
-            border:red solid 1px;
-
             transform: rotate(180deg);
+
+            @include lightblue{
+                right:-5px;
+                width: calc(100% + 10px);
+            }
         }
 
         .module-title {
