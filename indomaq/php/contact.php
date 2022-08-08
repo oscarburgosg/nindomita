@@ -49,7 +49,7 @@
 	$email = $_POST['email'];
 	$message = $_POST['message'];
 	$from = $email;
-	$to = 'ventas@naturalezaindomita.cl';  // please change this email id
+	$to = 'indomaq@gmail.com';  // please change this email id
 	$subject = 'Contacto desde la pagina web';
 
 	$body = "Hola. Mi nombre es $name - phone number $phone. Los contacto desde la web.\n Mi email es $email\n Les quiero preguntar lo siguiente:\n $message";
