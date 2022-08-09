@@ -168,6 +168,7 @@
     });
 
     // formularios top - bottom
+	/*
     $("#contactForm").submit(function (e) {
 
         e.preventDefault();
@@ -202,9 +203,72 @@
         return false;
 
     });
+	*/
+	
+	//init send email contact form
+	(function() {
+            emailjs.init('CZEooZQGf8CnSuVxX');
+	})();
+		
+	
+	
+	
+	$("#contactForm").submit(function (e) {
+		
+		event.preventDefault();
+			
+		var form = document.forms['contactForm'];
+		var $ = jQuery;
+
+        var postData = $(this).serializeArray(),
+            formURL = $(this).attr("action"),
+            $cfsubmit = $("#cfsubmit"),
+            cfsubmitText = $cfsubmit.text();
+
+        $cfsubmit.text("Enviando...");
+		
+		// these IDs from the previous steps
+		emailjs.sendForm('service_xm0p25c', 'template_mwquf3t', this)
+			.then(function() {
+				console.log('SUCCESS!');
+				$cfsubmit.text('Consulta Enviada');
+			}, function(error) {
+				console.log('FAILED...', error);
+				$cfsubmit.text('FAILED...', error);
+			});
+			
+        return false;
+
+    });
 
     $("#contactFormBottom").submit(function (e) {
 
+
+		event.preventDefault();
+			
+		var form = document.forms['contactFormBottom'];
+		var $ = jQuery;
+
+        var postData = $(this).serializeArray(),
+            formURL = $(this).attr("action"),
+            $cfsubmit = $("#cfsubmitBottom"),
+            cfsubmitText = $cfsubmit.text();
+
+        $cfsubmit.text("Enviando...");
+		
+		// these IDs from the previous steps
+		emailjs.sendForm('service_xm0p25c', 'template_mwquf3t', this)
+			.then(function() {
+				console.log('SUCCESS!');
+				$cfsubmit.text('Consulta Enviada');
+			}, function(error) {
+				console.log('FAILED...', error);
+				$cfsubmit.text('FAILED...', error);
+			});
+
+
+
+/*
         e.preventDefault();
         var $ = jQuery;
 
@@ -235,7 +299,7 @@
             });
 
         return false;
-
+*/
     });
 
   });      

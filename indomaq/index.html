@@ -26,6 +26,13 @@
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function() {
+			emailjs.init('CZEooZQGf8CnSuVxX');
+		})();
+	</script>
+
 </head>
 
 <body>
@@ -96,7 +103,10 @@
           <div class="contentForm" data-aos="fade-down" data-aos-delay="">
             <h3>¿Consultas?</h3>
             <h4>Ingresa la información para que estemos en contacto.</h4>
-            <form class="" id="contactForm" role="form" method="post" action="php/contact.php">
+
+
+
+            <form class="" id="contactForm" role="form" method="post">
               <div class="form-group">
                 <label class="" for="name">Nombre</label>
                 <input class="form-control" type="text" id="name" name="name" placeholder="Ingresa tu nombre*"
@@ -125,6 +135,9 @@
                 ENVÍANOS TU CONSULTA
               </button>
             </form>
+			
+			
+			
             <div class="ajax-response font-alt" id="contactFormResponse"></div>
           </div>
         </div>
@@ -1013,7 +1026,8 @@
     <div class="contentForm" data-aos="fade-down" data-aos-delay="">
       <h3>¿Consultas?</h3>
       <h4>Ingresa la información para que estemos en contacto.</h4>
-      <form class="" id="contactFormBottom" role="form" method="post" action="php/contact.php">
+	  
+      <form class="" id="contactFormBottom" role="form" method="post">
         <div class="form-group">
           <label class="" for="name">Nombre</label>
           <input class="form-control" type="text" id="name" name="name" placeholder="Ingresa tu nombre*"
@@ -1038,7 +1052,7 @@
             required="required" data-validation-required-message="Please enter your message."></textarea>
           <p class="help-block text-danger"></p>
         </div>
-        <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">
+        <button class="btn btn-block btn-round btn-d" id="cfsubmitBottom" type="submit">
           ENVÍANOS TU CONSULTA
         </button>
       </form>
